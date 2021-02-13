@@ -15,38 +15,37 @@ int main()
     
     //---Programme---
     
-    printf("The program is lunching ...");
-    printf("Please wait ...");
-    printf("Continue ? (1=Yes/0=No)");
+    printf("The program is lunching ...\n");
+    printf("Please wait ...\n");
+    printf("Continue ? (1=Yes/0=No)\n");
     scanf("%d", &YN);
     
     if (YN == 1)
         {
-        printf("Compiling ...Done !");
+        printf("Compiling ...Done !\n");
     }
     else
         {
-        printf("Error 203 Error, Failed loading");
+        printf("Error 203 Error, Failed loading\n\n\n");
     }
     
-    //---Variable "Int Name = 0;"---
+    //--Name & Fichier---
     
-    printf("Whats your name ?");
+    printf("Whats your name ?\n");
     scanf("%s", Name);
-    printf("Your name is %s !", Name);
+    printf("Your name is %s !\n", Name);
     
-    //---Fichier---
+    //---Name & Fichier---
     
     fichier = fopen("Info.prenom", "w");
     
     if (fichier != NULL)
     {
-        fprintf(fichier, "Name = %s", Name);
+        fprintf(fichier, "Name = %s\n", Name);
         fclose(fichier);
     }
-    
-    
-    printf("Go to GitHub of Zapoom pls :)");
+     
+    printf("\nGo to GitHub of Zapoom pls : https://github.com/lefurious/Zapoom\n");
     
     return 0;
 
