@@ -1,1 +1,15 @@
-D
+.T
+
+{
+	color : red;
+}
+
+table
+{
+     border-collapse:collapse;
+}
+
+td
+{
+    border:1px solid black;
+}
