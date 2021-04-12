@@ -1,4 +1,3 @@
-
 //---Directives de préprossésseur---
 
 #include <stdio.h>
