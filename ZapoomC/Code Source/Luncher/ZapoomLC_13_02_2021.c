@@ -14,7 +14,6 @@ int main()
     FILE* fichier = NULL; 
 
     //---Programme---
-
     printf("The program is lunching ...\n"); 
     sleep(3);
     printf("Please wait ...\n");
@@ -39,46 +38,12 @@ int main()
     sleep(1);
     printf("dl : Storage/emualted/0/Zapoom/setup.py\n");
     sleep(3);
-    printf("Continue ? (1=Yes/0=No)\n"); 
-    scanf("%d", &YN);
+	printf("Done !");
 
-    if (YN == 1)
-    {
-        printf("Compiling.\n");
-        sleep(1);
-        printf(".\n");
-        sleep(1);
-        printf("..\n");
-        sleep(1);
-        printf("...\n");
-        sleep(1);
-        printf("Done !\n");
-        sleep(3);
-    } 
-    else 
-    { 
-        printf("Error 203 Error, Failed loading\n\n\n");
-        exit(0);
-    } 
 
-    //--Name & Fichier--- 
-
-    printf("Whats your name ?\n"); 
-    scanf("%s", Name); 
-    printf("Your name is %s !\n", Name); 
+    printf("\nGo to GitHub of Zapoom pls : https://github.com/lefurious/Zapoom\n\n\n\n\n\n\n\n\n\n\n");
     sleep(1);
-
-    //---Name & Fichier--- 
-    
-    fichier = fopen("Info.prenom", "w");
-    
-    if (fichier != NULL) 
-    { 
-        fprintf(fichier, "Name = %s\n", Name); 
-        fclose(fichier); 
-    } 
-
-    printf("\nGo to GitHub of Zapoom pls : https://github.com/lefurious/Zapoom\n\n\n\n\n\n\n\n\n\n\n"); 
+    exit(0);
 
     return 0;
     
