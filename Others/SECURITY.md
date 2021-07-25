@@ -22,3 +22,10 @@ This is the supported version for window 10 :
 | 1.0.2 Alpha | :white_check_mark: |
 | 1.0.1 Alpha | :white_check_mark: |
 | 1.0.0 Alpha | :white_check_mark: |
+
+## A faire
+[ ]
+[ ]
+[ ]
+[ ]
+[ ]
