@@ -6,4 +6,4 @@ This is the supported version for window 10 :
 
 | Version | Supported          |
 |---------|--------------------|
-| 1.0.0 Alpha | :cross_mark: |
+| 1.0.0 Alpha | not supported |
