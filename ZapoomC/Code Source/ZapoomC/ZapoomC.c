@@ -218,6 +218,7 @@ int main()
 			//Attaque
 			sleep(1);
 			printf("Ok, mais.. il semblerait que tu n'a pas d'arme !\nTu pert donc 5 pv, car le touple t'as attaque !\n");
+			perso_pv = perso_pv - 5;
 			printf("Tu as maintenant %d de vie !\n", perso_pv);
 			sleep(5);
 			printf("Le touple s'en va sans degat avec %d de vie !\n", mob_touple_pv);
@@ -229,9 +230,9 @@ int main()
 				sleep(1);
 				printf("Chargement...\n");
 				sleep(1);
-				printf("....");
+				printf("....\n");
 				sleep(1);
-				printf(".....");
+				printf(".....\n");
 				sleep(1);
 				printf("Le touple est une creature féroce qui va a la rencontre des joueurs pour les affronter, au plus pronfond de lui se cache des sentiments de regret... ce mot ne devrais meme pas existé !, mais bon c'est comme les ratata, c'est le monstre basic !, a present quelques caractéristiques sur le touple :\n- Grande vie avec 50 points de vie (pv)\n- Type : ocean\n- Sexe : male\n\nVoila, maintenant tu t'y connais un peu plus sur le touple !\n");
 			}
