@@ -18,7 +18,7 @@ int main()
 	int sw;
     
     //mob_touple
-    int mob_touple = 0;
+    int mob_touple = 1;
     //Info mob_touple
     signed char mob_touple_pv = 50;
     
@@ -35,6 +35,7 @@ int main()
     int perso_eau = 0;
     int perso_force = 0;
     int perso_lvl = 0;
+    signed char perso_pv = 100;
     
     //fichier open
     
@@ -142,7 +143,7 @@ int main()
     {
     	perso_nourriture = perso_nourriture + 1;
     	perso_lvl = perso_lvl + 1;
-    	printf("Tien :\n- +1 de nourriture\n- +0 d'eau\n- +0 de force\n- +1 Lvl\nTu as maintenant :\n- %d de nourriture\n- %d d'eau\n- %d de force\n- %d de level\n", perso_nourriture, perso_eau, perso_force, perso_lvl);
+    	printf("Tien :\n- +1 de nourriture\n- +0 d'eau\n- +0 de force\n- +1 Lvl\n- +0 de vie\nTu as maintenant :\n- %d de nourriture\n- %d d'eau\n- %d de force\n- %d de level\n- %d de vie\n", perso_nourriture, perso_eau, perso_force, perso_lvl, perso_pv);
     	sleep(1);
 	}
 	else
@@ -182,7 +183,7 @@ int main()
 	if (fichier != NULL)
     {
     	//on peut écrire dans le fichier c'est bon
-    	fprintf(fichier, "Tu as maintenant :\n- %d de nourriture\n- %d d'eau\n- %d de force\n- %d de level", perso_nourriture, perso_eau, perso_force, perso_lvl);
+    	fprintf(fichier, "Tu as maintenant :\n- %d de nourriture\n- %d d'eau\n- %d de force\n- %d de level\n- %d de vie\n", perso_nourriture, perso_eau, perso_force, perso_lvl, perso_pv);
 	}
 	else
 	{
@@ -214,10 +215,31 @@ int main()
 	switch (user_firstmob)
 	{
 		case 1:
-			
+			//Attaque
+			sleep(1);
+			printf("Ok, mais.. il semblerait que tu n'a pas d'arme !\nTu pert donc 5 pv, car le touple t'as attaque !\n");
+			printf("Tu as maintenant %d de vie !\n", perso_pv);
+			sleep(5);
+			printf("Le touple s'en va sans degat avec %d de vie !\n", mob_touple_pv);
+			sleep(1);
+			printf("Veux-tu en savoir plus sur cette bete ferosse ?\n");
+			scanf("%d", &user_yon);
+			if (user_yon == 1)
+			{
+				sleep(1);
+				printf("Chargement...\n");
+				sleep(1);
+				printf("....");
+				sleep(1);
+				printf(".....");
+				sleep(1);
+				printf("Le touple est une creature féroce qui va a la rencontre des joueurs pour les affronter, au plus pronfond de lui se cache des sentiments de regret... ce mot ne devrais meme pas existé !, mais bon c'est comme les ratata, c'est le monstre basic !, a present quelques caractéristiques sur le touple :\n- Grande vie avec 50 points de vie (pv)\n- Type : ocean\n- Sexe : male\n\nVoila, maintenant tu t'y connais un peu plus sur le touple !\n");
+			}
 		break;
 		case 2:
-			
+			//Rebrousse chemin
+			sleep(1);
+			printf("Ok, mais le touple est triste... il s'enfuit\n");
 		break;
 		default:
 			//Message d'erreur
