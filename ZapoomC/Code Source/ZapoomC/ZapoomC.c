@@ -7,19 +7,13 @@
 
 int main()
 {
-  
-    //Char
-    
-    char user_prenom[50];
-    char user_pseudoAndPassword[50];
-    char user_password[10];
+    //variable
     
     //Switch
 	int sw;
     
     //mob_touple
     int mob_touple = 1;
-    //Info mob_touple
     signed char mob_touple_pv = 50;
     
     //user
@@ -29,6 +23,9 @@ int main()
     int user_login = 1;
     signed char user_request_firstmob = 0;
     signed char user_request_regenpv = 1;
+    char user_prenom[50];
+    char user_pseudoAndPassword[50];
+    char user_password[10];
 	    
     //perso
     
@@ -72,10 +69,20 @@ int main()
     	break;
     	case 3:
     	  printf("Ok Au-revoir :(\n");
-    	  exit(0);
+    	  exit(1);
     	break;
     	default:
-    	  printf("Tu n'as pas entrer un chiffre/nombre correcte donc il faut\nque tu redemarre le programme !\n");
+    	  //Message d'erreur
+    	printf("/!\ERROR/!\\nCode error : 1\nYou did not enter a correct number, you must \n restart the program!\n");
+    	sleep(3);
+    	printf("The program will close automatically in 3 seconds ...\n");
+    	sleep(1);
+    	printf("2...\n");
+    	sleep(1);
+    	printf("1...\n");
+    	sleep(1);
+    	printf("0...\n");
+    	exit(1);
     	break;
     }
 	
@@ -96,7 +103,7 @@ int main()
 		printf("Je TE tutoie quand meme !\n\n\n");
 		sleep(1);
 	}
-	
+	printf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
     printf("       ---Login---\nVeut tu te creer un compte (1),\nou te connecter a un compte existants(2), ou quitter (3)? \nTape le chiffre qui te corresponds et appuies sur entree !\n");
     scanf("%d", &user_login);
     
@@ -129,7 +136,7 @@ int main()
     		printf("1...\n");
     		sleep(1);
     		printf("0...\n");
-    		exit(0);
+    		exit(1);
     	break;
 	}
     
@@ -137,8 +144,6 @@ int main()
     int faim = 0;
     scanf("%d", &faim);
     sleep(1);
-    
-    //Int de nourrituren, d'eau et de force
     
     if (faim == 1)
     {
@@ -179,7 +184,7 @@ int main()
 	}
 	
 	
-	//Fichier pour "backup_1"
+	//Fichier pour "backup_1.txt"
 	
 	if (fichier != NULL)
     {
@@ -189,7 +194,16 @@ int main()
 	else
 	{
 		//Message d'erreur
-		printf("/!\ERROR/!\\nCode error : 2\nThere was a problem opening a file, maybe for a backup!\n");
+    	printf("/!\ERROR/!\\nCode error : 2\nThere was a problem opening a file, maybe for a backup!\n");
+    	sleep(3);
+    	printf("The program will close automatically in 3 seconds ...\n");
+    	sleep(1);
+    	printf("2...\n");
+    	sleep(1);
+    	printf("1...\n");
+    	sleep(1);
+    	printf("0...\n");
+    	exit(2);
 	}
 	
 	//sleep(1);
@@ -203,7 +217,7 @@ int main()
 	printf("Un touple vient d'apparaitre !\n");
 	sleep(1);
 	printf("Que va tu faire ?\n");
-	printf("<><><><><>Menu<><><><><>\n\n");
+	printf("<><><><><>Menu De Combat<><><><><>\n\n");
 	printf("1.L'attaquer\n2.Rebrousser chemin\n");
 	sleep(1);
 	
@@ -297,7 +311,7 @@ int main()
 							break;
 							case 7:
 								printf("Ok tu as pris 7 pv -> (point(s) de vie) en plus.\n");
-								perso_pv = perso_pv + 7;
+								 perso_pv = perso_pv + 7;
 								printf("Tu en as maintenant %d\n", perso_pv);
 							break;
 							case 8:
@@ -326,7 +340,7 @@ int main()
     							printf("1...\n");
     							sleep(1);
 	    						printf("0...\n");
-	    						exit(0);
+	    						exit(1);
 							break;
 						}
 					}
@@ -366,6 +380,7 @@ int main()
 			ses pv avec sa perso_nourriture
 			*/
 			
+			sleep(2);
 			printf("Le touple s'en va sans degat avec %d de vie !\n", mob_touple_pv);
 			sleep(1);
 			printf("Veux-tu en savoir plus sur cette bete ferosse ?\n");
@@ -379,7 +394,7 @@ int main()
 				sleep(1);
 				printf(".....\n");
 				sleep(1);
-				printf("Le touple est une creature féroce qui va a la rencontre des joueurs pour les affronter,\nau plus pronfond de lui se cache des sentiments de regret... ce mot ne devrais meme pas existe !\nmais bon c'est comme les ratata, c'est le monstre basic !\nA present quelques caracteristiques sur le touple :\n\n- Grande vie avec 50 points de vie (pv)\n- Type : ocean\n- Sexe : male\n\nVoila, maintenant tu t'y connais un peu plus sur le touple !\n");
+				printf("Le touple est une creature feroce qui va a la rencontre des joueurs pour les affronter,\nau plus pronfond de lui se cache des sentiments de regret... ce mot ne devrais meme pas existe !\nmais bon c'est comme les ratata, c'est le monstre basique !\nA present quelques caracteristiques sur le touple :\n\n- Pv :50\n- Type : ocean\n- Sexe : male\n\nVoila, maintenant tu t'y connais un peu plus sur le touple !\n");
 			}
 			else
 			{
@@ -403,7 +418,7 @@ int main()
     		printf("1...\n");
     		sleep(1);
     		printf("0...\n");
-    		exit(0);
+    		exit(1);
 		break;
 	}
 	
