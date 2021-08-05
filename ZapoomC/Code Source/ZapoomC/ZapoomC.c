@@ -4,7 +4,7 @@ Devloppé par Le Furious Killer
 Le ?? Janvier 2021 a ??h??
 Sauvergarde de tout les fichiers sur github : https://github.com/lefurious/Zapoom/blob/Zapoom/ZapoomC/Code%20Source/ZapoomC/ZapoomC.c
 ----------------------------------------------------------------------------------
-Pendant 4 jours d'affillé j'ai codé plus de 693 ligne de code (^_^) 
+Pendant 3 jours d'affillé j'ai codé plus de 531 ligne de code (^_^) 
 ----------------------------------------------------------------------------------
 */
 
@@ -21,15 +21,25 @@ int main()
 {
 
     //variable
-    
-    //Générateur de nombre aléatoire copier coller du site du zéro (openclassrooms)
-    
+    	
     //Switch
+    
 	int sw;
     
     //mob_touple
+    
     int mob_touple = 1;
     signed char mob_touple_pv = 50;
+    signed char mob_touple_drop;
+    
+    //Générateur de nombre aléatoire copier coller du site du zéro (openclassrooms)
+    	//constant MAX et MIN
+    	
+    	const int MAX = 5, MIN = 1;
+    	//generateur d'aleatoire
+    	
+    	srand(time(NULL));
+    	mob_touple_drop = (rand() % (MAX - MIN + 1)) + MIN;
     
     //user
     
@@ -43,6 +53,7 @@ int main()
     char user_password[10];
 	    
     //perso
+    
     int perso_inv_bois = 0;
     int perso_inv_caillou = 0;
     int perso_inv_fil = 0;
@@ -754,7 +765,7 @@ int main()
 	arme, etc...
 	*/
 	
-	printf("Maintenant, on vas devoir aller cherchez du bois dans la forêt !\n");
+	printf("Maintenant, on vas devoir aller cherchez du bois dans la foret !\n");
 	sleep(3);
 	printf("Oh, regarde la bas un arbre !");
 	sleep(1);
@@ -813,6 +824,16 @@ int main()
     		printf("Terminee !\n");
 		}
 	}
+	
+	//sleep de sortie des syst
+	sleep(2);
+	
+	//juste avoir de l'oxigene
+	printf("\n\n");
+	
+	//Premier succèes
+	printf("Bravo : premier succes deverouille :\nCouper sa premiere buche.\n\n");
+	printf("C'est bon tu as casse ton premier arbre,\n tu as du remarquer que un succes est apparus !\n");
 	
 	fclose(fichier); //fermeture des fichiers
 	
