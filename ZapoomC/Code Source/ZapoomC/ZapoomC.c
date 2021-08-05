@@ -1,13 +1,28 @@
+/*
+----------------------------------------------------------------------------------
+Devloppé par Le Furious Killer
+Le ?? Janvier 2021 a ??h??
+Sauvergarde de tout les fichiers sur github : https://github.com/lefurious/Zapoom/blob/Zapoom/ZapoomC/Code%20Source/ZapoomC/ZapoomC.c
+----------------------------------------------------------------------------------
+Pendant 4 jours d'affillé j'ai codé plus de 693 ligne de code (^_^) 
+----------------------------------------------------------------------------------
+*/
+
 //Directives de préprossésseur
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <math.h>
+#include <time.h>
 
 //Compiler version TDM-GCC 4.9.2 64-bit Release
 
 int main()
 {
+
     //variable
+    
+    //Générateur de nombre aléatoire copier coller du site du zéro (openclassrooms)
     
     //Switch
 	int sw;
@@ -28,7 +43,13 @@ int main()
     char user_password[10];
 	    
     //perso
-    
+    int perso_inv_bois = 0;
+    int perso_inv_caillou = 0;
+    int perso_inv_fil = 0;
+    int perso_inv_baton = 0;
+    int perso_inv_carteunoreverse = 0;
+    int perso_inv_laine = 0;
+    int perso_inv_toupli = 0; //le toupli est un objet (condiéré comme de la chair de touple), il y a 1 chance sur 5 qu'il en drop
     int perso_nourriture = 0;
     int perso_eau = 0;
     int perso_force = 0;
@@ -265,17 +286,93 @@ int main()
 	}
 	else
 	{
-		//Message d'erreur
-    	printf("/!\ERROR/!\\nCode error : 2\nThere was a problem opening a file, maybe for a backup!\n");
+		/*
+		Début du
+		mesage d'erreur !
+		*/
+    	printf("/!\ERROR/!\\nCode error : 1\nYou did not enter a correct number, you must \n restart the program!\n");
     	sleep(3);
+    	printf("Fermeture des fichiers ouvert ?\n");
+    	sleep(1);
+    	if (fichier != NULL)
+    	{
+    		printf("Tentative de redemarrage des fichiers...\n");
+    		sleep(2);
+    		printf("0  - [..........]\n");
+    		sleep(1);
+    		printf("12 - [|.........]\n");
+    		sleep(1);
+    		printf("24 - [||........]\n");
+    		sleep(1);
+    		printf("30 - [|||.......]\n");
+    		sleep(1);
+    		printf("46 - [||||......]\n");
+    		sleep(1);
+    		printf("51 - [|||||.....]\n");
+    		sleep(1);
+    		printf("68 - [||||||....]\n");
+    		sleep(1);
+    		printf("68 - [||||||....]\n");
+    		sleep(1);
+    		printf("70 - [|||||||...]\n");
+    		sleep(1);
+    		printf("82 - [||||||||..]\n");
+    		sleep(1);
+    		printf("89 - [||||||||..]\n");
+    		sleep(1);
+    		printf("90 - [|||||||||.]\n");
+    		sleep(1);
+    		printf("95 - [|||||||||.]\n");
+    		sleep(1);
+    		printf("96 - [|||||||||.]\n");
+    		sleep(1);
+    		printf("98 - [|||||||||.]\n");
+    		sleep(1);
+    		printf("99 - [|||||||||.]\n");
+    		sleep(1);
+    		printf("99 - [|||||||||.]\n");
+    		sleep(1);
+    		printf("100 -[||||||||||]\n");
+    		sleep(1);
+    		printf("Terminee !\n");
+    		//debut de la 2eme verif de fichier != NULL
+    		if (fichier != NULL)
+    		{
+    			if (user_tutoie == 1) //la variable tutoie sert une fois au moins ;=)
+    			{
+    				printf("Recuperation termine ! Tu as eu de la chance !\n");
+    				sleep(3);
+    				printf("Le programme va quand meme se fermer pour des raisons de securite !\n");
+    				sleep(3);
+				}
+    			else
+    			{
+    				printf("Recuperation termine ! Vous avez eu de la chance !\n");
+    				sleep(3);
+    				printf("Le programme va quand meme se fermer pour des raisons de securite !\n");
+    				sleep(3);
+				}
+			}
+		}
+		else
+		{
+			printf("Les fichiers ne peuvent pas etre fermer donc il faut que tu \nredemarre le programme mais ne t'inquite pas il va redemarrer tout seul !\n");
+			sleep(3);
+		}
+    	printf("OK !\n");
+    	sleep(1);
     	printf("The program will close automatically in 3 seconds ...\n");
     	sleep(1);
     	printf("2...\n");
     	sleep(1);
-    	printf("1...\n");
-    	sleep(1);
-    	printf("0...\n");
-    	exit(2);
+		printf("1...\n");
+		sleep(1);
+		printf("0...\n");
+		exit(1);
+    	/*
+		Fin du
+		message d'erreur !
+		*/
 	}
 	
 	//sleep(1);
@@ -305,7 +402,7 @@ int main()
 	switch (user_request_firstmob)
 	{
 		case 1:
-			//Attaque
+			//Attaque & demande d'attaques avec un switch
 			sleep(1);
 			printf("Ok, mais.. il semblerait que tu n'a pas d'arme !\nTu pert donc 5 pv, car le touple t'as attaque !\n");
 			sleep(5);
@@ -402,10 +499,10 @@ int main()
 								printf("Tu en as maintenant %d\n", perso_pv);
 							break;
 							default:
-								/*
-								Début du
-								mesage d'erreur !
-								*/
+							/*
+							Début du
+							mesage d'erreur !
+							*/
     						printf("/!\ERROR/!\\nCode error : 1\nYou did not enter a correct number, you must \n restart the program!\n");
     						sleep(3);
     						printf("Fermeture des fichiers ouvert ?\n");
@@ -413,76 +510,83 @@ int main()
     						if (fichier != NULL)
     						{
     							printf("Tentative de redemarrage des fichiers...\n");
-    						sleep(2);
-    						printf("0  - [..........]\n");
-    						sleep(1);
-    						printf("12 - [|.........]\n");
-    						sleep(1);
-    						printf("24 - [||........]\n");
-    						sleep(1);
-    						printf("30 - [|||.......]\n");
-    						sleep(1);
-    						printf("46 - [||||......]\n");
-    						sleep(1);
-    						printf("51 - [|||||.....]\n");
-    						sleep(1);
-    						printf("68 - [||||||....]\n");
-    						sleep(1);
-    						printf("68 - [||||||....]\n");
-    						sleep(1);
-    						printf("70 - [|||||||...]\n");
-    						sleep(1);
-    						printf("82 - [||||||||..]\n");
-    						sleep(1);
-    						printf("89 - [||||||||..]\n");
-    						sleep(1);
-    						printf("90 - [|||||||||.]\n");
-    						sleep(1);
-    						printf("95 - [|||||||||.]\n");
-    						sleep(1);
-    						printf("96 - [|||||||||.]\n");
-    						sleep(1);
-    						printf("98 - [|||||||||.]\n");
-    						sleep(1);
-    						printf("99 - [|||||||||.]\n");
-    						sleep(1);
-    						printf("99 - [|||||||||.]\n");
-    						sleep(1);
-    						printf("100 -[||||||||||]\n");
-    						sleep(1);
-    						printf("Terminez !\n");
-    						//debut de la 2eme verif de fichier != NULL
-    						if (fichier != NULL)
-    						{
-    							if (user_tutoie == 1) //la variable tutoie sert une fois au moins ;=)
+    							sleep(2);
+    							printf("0  - [..........]\n");
+    							sleep(1);
+    							printf("12 - [|.........]\n");
+    							sleep(1);
+    							printf("24 - [||........]\n");
+    							sleep(1);
+    							printf("30 - [|||.......]\n");
+    							sleep(1);
+    							printf("46 - [||||......]\n");
+    							sleep(1);
+    							printf("51 - [|||||.....]\n");
+    							sleep(1);
+    							printf("68 - [||||||....]\n");
+    							sleep(1);
+    							printf("68 - [||||||....]\n");
+    							sleep(1);
+    							printf("70 - [|||||||...]\n");
+    							sleep(1);
+    							printf("82 - [||||||||..]\n");
+    							sleep(1);
+    							printf("89 - [||||||||..]\n");
+    							sleep(1);
+    							printf("90 - [|||||||||.]\n");
+    							sleep(1);
+    							printf("95 - [|||||||||.]\n");
+    							sleep(1);
+    							printf("96 - [|||||||||.]\n");
+    							sleep(1);
+    							printf("98 - [|||||||||.]\n");
+    							sleep(1);
+    							printf("99 - [|||||||||.]\n");
+    							sleep(1);
+    							printf("99 - [|||||||||.]\n");
+    							sleep(1);
+    							printf("100 -[||||||||||]\n");
+    							sleep(1);
+    							printf("Terminee !\n");
+    								//debut de la 2eme verif de fichier != NULL
+    							if (fichier != NULL)
     							{
-    								printf("Recuperation termine ! Tu as eu de la chance !\n");
+    								if (user_tutoie == 1) //la variable tutoie sert une fois au moins ;=)
+    								{
+    									printf("Recuperation termine ! Tu as eu de la chance !\n");
+    									sleep(3);
+    									printf("Le programme va quand meme se fermer pour des raisons de securite !\n");
+    									sleep(3);
+									}
+    								else
+    								{
+    									printf("Recuperation termine ! Vous avez eu de la chance !\n");
+    									sleep(3);
+    									printf("Le programme va quand meme se fermer pour des raisons de securite !\n");
+    									sleep(3);
+									}
 								}
-    							else
-    							{
-    								printf("Recuperation termine ! Vous avez eu de la chance !\n");
+								else
+								{
+									printf("Les fichiers ne peuvent pas etre fermer donc il faut que tu \nredemarre le programme mais ne t'inquite pas il va redemarrer tout seul !\n");
 								}
+    							printf("OK !");
+    							sleep(1);
+    							printf("The program will close automatically in 3 seconds ...\n");
+    							sleep(1);
+    							printf("2...\n");
+    							sleep(1);
+		    					printf("1...\n");
+		    					sleep(1);
+		    					printf("0...\n");
+		    					exit(1);
+    							
+		    					/*
+								Fin du
+								message d'erreur !
+								*/
+								
 							}
-						}
-						else
-						{
-							printf("Les fichiers ne peuvent pas etre fermer donc il faut que tu \nredemarre le programme mais ne t'inquite pas il va redemarrer tout seul !\n");
-						}
-    					printf("OK !");
-    					sleep(1);
-    					printf("The program will close automatically in 3 seconds ...\n");
-    					sleep(1);
-    					printf("2...\n");
-    					sleep(1);
-		    			printf("1...\n");
-		    			sleep(1);
-		    			printf("0...\n");
-		    			exit(1);
-    			
-		    			/*
-						Fin du
-						message d'erreur !
-						*/
 							break;
 						}
 					}
@@ -490,7 +594,7 @@ int main()
 				else
 				{
 					printf("Ok tu ne regeneras pas, attends la fin d'un autre combat pour regenerer !\n");
-					//puis, plus rien, j'ai deplacer le suite en Ctrl + X a la ligne 252, colonne 25.
+					//puis, plus rien, j'ai deplacer les infos utiles au debut avec le raccourcis Ctrl + X a la ligne 252, colonne 25.
 				}
 			}
 			else
@@ -598,7 +702,7 @@ int main()
     			sleep(1);
     			printf("100 -[||||||||||]\n");
     			sleep(1);
-    			printf("Terminez !\n");
+    			printf("Terminee !\n");
     			//debut de la 2eme verif de fichier != NULL
     			if (fichier != NULL)
     			{
@@ -616,7 +720,7 @@ int main()
 			{
 				printf("Les fichiers ne peuvent pas etre fermer donc il faut que tu \nredemarre le programme mais ne t'inquite pas il va redemarrer tout seul !\n");
 			}
-    		printf("OK !");
+    		printf("OK !\n");
     		sleep(1);
     		printf("The program will close automatically in 3 seconds ...\n");
     		sleep(1);
@@ -650,7 +754,65 @@ int main()
 	arme, etc...
 	*/
 	
-	printf("Maintenant, on vas devoir aller cherchez du bois dans la forêt !");
+	printf("Maintenant, on vas devoir aller cherchez du bois dans la forêt !\n");
+	sleep(3);
+	printf("Oh, regarde la bas un arbre !");
+	sleep(1);
+	printf("\n");
+	printf("      ||\n");
+	printf("     |||| \n");
+	printf("    ||||||\n");
+	printf("      ||  \n");
+	printf("      ||  \n");
+	printf("      ||  \n");
+	printf("_|_,__||____,__||___\n\n");
+	sleep(2);
+	printf("Tu veux le couper pour recolter du bois ?\n");
+	scanf("%d", &user_yon);
+	if (user_yon == 1)
+	{
+		perso_inv_bois = perso_inv_bois + 4;
+		printf("Ok\n");
+		sleep(2);
+    	printf("0  - [..........]\n");
+    	sleep(1);
+    	printf("48 - [||||......]\n");
+    	sleep(1);
+    	printf("64 - [||||||....]\n");
+    	sleep(1);
+    	printf("73 - [|||||||...]\n");
+    	sleep(1);
+    	printf("100 -[||||||||||]\n");
+    	sleep(1);
+    	printf("Terminee !\n");
+	}
+	else
+	{
+		printf("Tu es sur ?\n");
+		scanf("%d", &user_yon);
+		if (user_yon == 1)
+		{
+			printf("Ok mais tu auras pas d'arme pour te defendre!\n");
+			sleep(2);
+		}
+		else
+		{
+			perso_inv_bois = perso_inv_bois + 4;
+			printf("Ok\n");
+			sleep(2);
+    		printf("0  - [..........]\n");
+    		sleep(1);
+    		printf("48 - [||||......]\n");
+    		sleep(1);
+    		printf("64 - [||||||....]\n");
+    		sleep(1);
+    		printf("73 - [|||||||...]\n");
+    		sleep(1);
+    		printf("100 -[||||||||||]\n");
+    		sleep(1);
+    		printf("Terminee !\n");
+		}
+	}
 	
 	fclose(fichier); //fermeture des fichiers
 	
