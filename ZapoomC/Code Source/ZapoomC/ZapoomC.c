@@ -4,8 +4,6 @@ Devloppé par Le Furious Killer
 Le ?? Janvier 2021 a ??h??
 Sauvergarde de tout les fichiers sur github : https://github.com/lefurious/Zapoom/blob/Zapoom/ZapoomC/Code%20Source/ZapoomC/ZapoomC.c
 ----------------------------------------------------------------------------------
-Pendant 3 jours d'affillé j'ai codé plus de 531 ligne de code (^_^) 
-----------------------------------------------------------------------------------
 */
 
 //Directives de préprossésseur
