@@ -20,6 +20,7 @@ Pendant 3 jours d'affillé j'ai codé plus de 531 ligne de code (^_^)
 int main()
 {
 
+
     //variable
     	
     //Switch
@@ -51,6 +52,7 @@ int main()
     char user_prenom[50];
     char user_pseudoAndPassword[50];
     char user_password[10];
+    long user_score;
 	    
     //perso
     
@@ -415,7 +417,9 @@ int main()
 		case 1:
 			//Attaque & demande d'attaques avec un switch
 			sleep(1);
-			printf("Ok, mais.. il semblerait que tu n'a pas d'arme !\nTu pert donc 5 pv, car le touple t'as attaque !\n");
+			printf("Ok, mais.. il semblerait que tu n'a pas d'arme !\nTu pert donc 5 pv, car le touple t'as attaque !\nMais comme tu as voulus attaquer le toupple,\nil t'en est reconnaisant et te donne donc + 2 de force !\n");
+			perso_force = perso_force + 2;
+
 			sleep(5);
 			perso_pv = perso_pv - 5;
 			printf("Tu as maintenant %d points de vie !\n", perso_pv);
@@ -834,6 +838,131 @@ int main()
 	//Premier succèes
 	printf("Bravo : premier succes deverouille :\nCouper sa premiere buche.\n\n");
 	printf("C'est bon tu as casse ton premier arbre,\n tu as du remarquer que un succes est apparus !\n");
+	
+	//recalcule pour "backup_1.txt" :
+	//Fichier pour "backup_1.txt"
+	
+	if (fichier != NULL)
+    {
+    	//on peut écrire dans le fichier c'est bon
+    	fprintf(fichier, "Tu as maintenant :\n- %d de nourriture\n- %d d'eau\n- %d de force\n- %d de level\n- %d de vie\n", perso_nourriture, perso_eau, perso_force, perso_lvl, perso_pv);
+	}
+	else
+	{
+		/*
+		Début du
+		mesage d'erreur !
+		*/
+    	printf("/!\ERROR/!\\nCode error : 1\nYou did not enter a correct number, you must \n restart the program!\n");
+    	sleep(3);
+    	printf("Fermeture des fichiers ouvert ?\n");
+    	sleep(1);
+    	if (fichier != NULL)
+    	{
+    		printf("Tentative de redemarrage des fichiers...\n");
+    		sleep(2);
+    		printf("0  - [..........]\n");
+    		sleep(1);
+    		printf("12 - [|.........]\n");
+    		sleep(1);
+    		printf("24 - [||........]\n");
+    		sleep(1);
+    		printf("30 - [|||.......]\n");
+    		sleep(1);
+    		printf("46 - [||||......]\n");
+    		sleep(1);
+    		printf("51 - [|||||.....]\n");
+    		sleep(1);
+    		printf("68 - [||||||....]\n");
+    		sleep(1);
+    		printf("68 - [||||||....]\n");
+    		sleep(1);
+    		printf("70 - [|||||||...]\n");
+    		sleep(1);
+    		printf("82 - [||||||||..]\n");
+    		sleep(1);
+    		printf("89 - [||||||||..]\n");
+    		sleep(1);
+    		printf("90 - [|||||||||.]\n");
+    		sleep(1);
+    		printf("95 - [|||||||||.]\n");
+    		sleep(1);
+    		printf("96 - [|||||||||.]\n");
+    		sleep(1);
+    		printf("98 - [|||||||||.]\n");
+    		sleep(1);
+    		printf("99 - [|||||||||.]\n");
+    		sleep(1);
+    		printf("99 - [|||||||||.]\n");
+    		sleep(1);
+    		printf("100 -[||||||||||]\n");
+    		sleep(1);
+    		printf("Terminee !\n");
+    		//debut de la 2eme verif de fichier != NULL
+    		if (fichier != NULL)
+    		{
+    			if (user_tutoie == 1) //la variable tutoie sert une fois au moins ;=)
+    			{
+    				printf("Recuperation termine ! Tu as eu de la chance !\n");
+    				sleep(3);
+    				printf("Le programme va quand meme se fermer pour des raisons de securite !\n");
+    				sleep(3);
+				}
+    			else
+    			{
+    				printf("Recuperation termine ! Vous avez eu de la chance !\n");
+    				sleep(3);
+    				printf("Le programme va quand meme se fermer pour des raisons de securite !\n");
+    				sleep(3);
+				}
+			}
+		}
+		else
+		{
+			printf("Les fichiers ne peuvent pas etre fermer donc il faut que tu \nredemarre le programme mais ne t'inquite pas il va redemarrer tout seul !\n");
+			sleep(3);
+		}
+    	printf("OK !\n");
+    	sleep(1);
+    	printf("The program will close automatically in 3 seconds ...\n");
+    	sleep(1);
+    	printf("2...\n");
+    	sleep(1);
+		printf("1...\n");
+		sleep(1);
+		printf("0...\n");
+		exit(1);
+    	/*
+		Fin du
+		message d'erreur !
+		*/
+		
+	//fin du recalcule des objets de perso_dans "backup_1.txt"
+	
+	//fin du jeu snif, snif ;(
+	
+	printf("Sa, yeah ! %s vient de finir le jeu,\n_____________________________________________________________________\n", user_prenom);
+	//comptage de point en les additionnant par eux même !
+	perso_inv_bois = perso_inv_bois + perso_inv_bois;
+	perso_inv_caillou = perso_inv_caillou + perso_inv_caillou;
+    perso_inv_fil = perso_inv_fil + perso_inv_fil;
+    perso_inv_baton = perso_inv_baton + perso_inv_baton;
+	perso_inv_carteunoreverse = perso_inv_carteunoreverse + perso_inv_carteunoreverse;
+    perso_inv_laine = perso_inv_laine + perso_inv_laine;
+    perso_inv_toupli = perso_inv_toupli + perso_inv_toupli;
+    perso_nourriture = perso_nourriture + perso_nourriture;
+    perso_eau = perso_eau + perso_eau;
+    perso_force = perso_force + perso_force;
+    perso_lvl = perso_lvl + perso_lvl;
+    perso_pv = perso_pv + perso_pv;
+    //comptage des variable ensemble (dans la variable score qui a été créé a la ligne 54, et la collone 5)
+    //user_score = :
+    user_score = perso_inv_caillou + perso_inv_bois + perso_inv_fil + perso_inv_baton + perso_inv_carteunoreverse + perso_inv_laine + perso_inv_toupli + perso_nourriture + perso_eau + perso_force + perso_lvl + perso_pv;
+    //suite
+    printf("%d", user_score);
+	//fin, snif...
+	printf("Ton score : %d, tu peut etre fier de toi jeune aventurier !\n", user_score);
+	printf("_____________________________________________________________________\n"); //ligne d'espace
 	
 	fclose(fichier); //fermeture des fichiers
 	
