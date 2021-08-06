@@ -940,19 +940,6 @@ int main()
 	//fin du jeu snif, snif ;(
 	
 	printf("Sa, yeah ! %s vient de finir le jeu,\n_____________________________________________________________________\n", user_prenom);
-	//comptage de point en les additionnant par eux même !
-	perso_inv_bois = perso_inv_bois + perso_inv_bois;
-	perso_inv_caillou = perso_inv_caillou + perso_inv_caillou;
-    perso_inv_fil = perso_inv_fil + perso_inv_fil;
-    perso_inv_baton = perso_inv_baton + perso_inv_baton;
-	perso_inv_carteunoreverse = perso_inv_carteunoreverse + perso_inv_carteunoreverse;
-    perso_inv_laine = perso_inv_laine + perso_inv_laine;
-    perso_inv_toupli = perso_inv_toupli + perso_inv_toupli;
-    perso_nourriture = perso_nourriture + perso_nourriture;
-    perso_eau = perso_eau + perso_eau;
-    perso_force = perso_force + perso_force;
-    perso_lvl = perso_lvl + perso_lvl;
-    perso_pv = perso_pv + perso_pv;
     //comptage des variable ensemble (dans la variable score qui a été créé a la ligne 54, et la collone 5)
     //user_score = :
     user_score = perso_inv_caillou + perso_inv_bois + perso_inv_fil + perso_inv_baton + perso_inv_carteunoreverse + perso_inv_laine + perso_inv_toupli + perso_nourriture + perso_eau + perso_force + perso_lvl + perso_pv;
