@@ -755,7 +755,7 @@ int main()
 	/*
 	Suite des choses, 
 	donc là on passé 
-	le cap des 400 
+	le cap des 700
 	lignes mais la 
 	on va faire le 
 	système de récolte 
@@ -934,6 +934,7 @@ int main()
 		Fin du
 		message d'erreur !
 		*/
+	}
 		
 	//fin du recalcule des objets de perso_dans "backup_1.txt"
 	
@@ -944,7 +945,7 @@ int main()
     //user_score = :
     user_score = perso_inv_caillou + perso_inv_bois + perso_inv_fil + perso_inv_baton + perso_inv_carteunoreverse + perso_inv_laine + perso_inv_toupli + perso_nourriture + perso_eau + perso_force + perso_lvl + perso_pv;
     //suite
-    printf("%d", user_score);
+    printf("%d", user_score); // a enlever si sa marche
 	//fin, snif...
 	printf("Ton score : %d, tu peut etre fier de toi jeune aventurier !\n", user_score);
 	printf("_____________________________________________________________________\n"); //ligne d'espace
