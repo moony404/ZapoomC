@@ -1,6 +1,6 @@
 /*
 ----------------------------------------------------------------------------------
-Devloppé par Le Furious Killer
+Devloppé par Moony (Moi)
 Le ?? Janvier 2021 a ??h??
 Sauvergarde de tout les fichiers sur github : https://github.com/lefurious/Zapoom/blob/Zapoom/ZapoomC/Code%20Source/ZapoomC/ZapoomC.c
 ----------------------------------------------------------------------------------
