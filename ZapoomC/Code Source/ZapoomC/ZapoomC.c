@@ -1,6 +1,6 @@
 /*
 ----------------------------------------------------------------------------------
-Devloppé par Moony (Moi)
+Devloppé par Le Furious Killer
 Le ?? Janvier 2021 a ??h??
 Sauvergarde de tout les fichiers sur github : https://github.com/lefurious/Zapoom/blob/Zapoom/ZapoomC/Code%20Source/ZapoomC/ZapoomC.c
 ----------------------------------------------------------------------------------
@@ -208,7 +208,7 @@ int main()
 		printf("Je TE tutoie quand meme !\n\n\n");
 		sleep(1);
 	}
-	printf("\n\n\n\n\n\n\n\n\n\n\n\\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nn\n\n\n\n\n\n\n\n\n\n\n\n");
+	printf("\n\n\n\n\n\n\n\n\n\n\n\\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
     printf("       ---Login---\nVeut tu te creer un compte (1),\nou te connecter a un compte existants(2), ou quitter (3)? \nTape le chiffre qui te corresponds et appuies sur entree !\n");
     scanf("%d", &user_login);
     
@@ -416,7 +416,7 @@ int main()
 		case 1:
 			//Attaque & demande d'attaques avec un switch
 			sleep(1);
-			printf("Ok, mais.. il semblerait que tu n'a pas d'arme !\nTu pert donc 5 pv, car le touple t'as attaque !\nMais comme tu as voulus attaquer le toupple,\nil t'en est reconnaisant et te donne donc + 2 de force !\n");
+			printf("Ok, mais.. il semblerait que tu n'a pas d'arme !\nTu pert donc 5 pv, car le touple t'as attaque !\nMais comme tu as voulus attaquer le touple,\nil t'en est reconnaisant et te donne donc + 2 de force !\n");
 			perso_force = perso_force + 2;
 
 			sleep(5);
@@ -654,7 +654,7 @@ int main()
 				sleep(1);
 				printf(".....\n");
 				sleep(1);
-				printf("Le touple est une creature feroce qui va a la rencontre des joueurs pour les affronter,\nau plus pronfond de lui se cache des sentiments de regret... ce mot ne devrais meme pas existe !\nmais bon c'est comme les ratata, c'est le monstre basique !\nA present quelques caracteristiques sur le touple :\n\n- Pv :50\n- Type : ocean\n- Sexe : male\n\nVoila, maintenant tu t'y connais un peu plus sur le touple !\n");
+				printf("Le touple est une creature feroce qui va a la rencontre des joueurs pour les affronter,\nau plus pronfond de lui se cache des sentiments de regret... ce mot ne devrais meme pas existe !\nmais bon c'est comme les ratata, c'est le monstre basique !\nA present quelques caracteristiques sur le touple :\n\n- Pv : 50\n- Type : ocean\n- Sexe : male\n\nVoila, maintenant tu t'y connais un peu plus sur le touple !\n");
 			}
 			else
 			{
@@ -781,52 +781,9 @@ int main()
 	printf("      ||  \n");
 	printf("_|_,__||____,__||___\n\n");
 	sleep(2);
-	printf("Tu veux le couper pour recolter du bois ?\n");
-	scanf("%d", &user_yon);
-	if (user_yon == 1)
-	{
-		perso_inv_bois = perso_inv_bois + 4;
-		printf("Ok\n");
-		sleep(2);
-    	printf("0  - [..........]\n");
-    	sleep(1);
-    	printf("48 - [||||......]\n");
-    	sleep(1);
-    	printf("64 - [||||||....]\n");
-    	sleep(1);
-    	printf("73 - [|||||||...]\n");
-    	sleep(1);
-    	printf("100 -[||||||||||]\n");
-    	sleep(1);
-    	printf("Terminee !\n");
-	}
-	else
-	{
-		printf("Tu es sur ?\n");
-		scanf("%d", &user_yon);
-		if (user_yon == 1)
-		{
-			printf("Ok mais tu auras pas d'arme pour te defendre!\n");
-			sleep(2);
-		}
-		else
-		{
-			perso_inv_bois = perso_inv_bois + 4;
-			printf("Ok\n");
-			sleep(2);
-    		printf("0  - [..........]\n");
-    		sleep(1);
-    		printf("48 - [||||......]\n");
-    		sleep(1);
-    		printf("64 - [||||||....]\n");
-    		sleep(1);
-    		printf("73 - [|||||||...]\n");
-    		sleep(1);
-    		printf("100 -[||||||||||]\n");
-    		sleep(1);
-    		printf("Terminee !\n");
-		}
-	}
+	printf("Tu le coupes au bout de 30 secondes *c'est archi long*\n");
+	
+	perso_inv_bois = perso_inv_bois + 4;
 	
 	//sleep de sortie des syst
 	sleep(2);
@@ -839,7 +796,15 @@ int main()
 	switch (sw)
 	{
 		case 1:
-			printf("Ok, attends un peu !\n");
+			if (user_tutoie == 1)
+			{
+				printf("Ok, attends un peu !\n");
+			}
+			else
+			{
+				printf("Ok, attendez un peu je vous prie.\n");
+			}
+			
 			sleep(2);
     		printf("0  - [..........]\n");
     		sleep(1);
@@ -858,7 +823,14 @@ int main()
     		sleep(1);
 		break;
 		case 2:
-			printf("Ok, attends un peu !\n");
+			if (user_tutoie == 1)
+			{
+				printf("Ok, attends un peu !\n");
+			}
+			else
+			{
+				printf("Ok, attendez un peu je vous prie.\n");
+			}
 			sleep(2);
     		printf("0  - [..........]\n");
     		sleep(1);
@@ -1074,15 +1046,22 @@ int main()
 	
 	//fin du jeu snif, snif ;(
 	
-	printf("Sa, yeah ! %s vient de finir le jeu,\n_____________________________________________________________________\n", user_prenom);
+	printf("Sa, yeah ! %s vient de finir ZapoomC,\n_____________________________________________________________________\n", user_prenom);
     //comptage des variable ensemble (dans la variable score qui a été créé a la ligne 54, et la collone 5)
     //user_score = :
     user_score = perso_inv_caillou + perso_inv_bois + perso_inv_fil + perso_inv_baton + perso_inv_carteunoreverse + perso_inv_laine + perso_inv_toupli + perso_nourriture + perso_eau + perso_force + perso_lvl + perso_pv;
     //suite
 	//fin, snif...
-	printf("Ton score : %d, tu peut etre fier de toi jeune aventurier !\n", user_score);
+	if (user_tutoie == 1)
+	{
+		printf("Ton score : %d, tu peut etre fier de toi jeune aventurier !\n", user_score);
+	}
+	else
+	{
+	    printf("Ton score : %d, vous poyvez etre fier de vous jeune aventurier !\n", user_score);
+	}
 	printf("_____________________________________________________________________\n"); //ligne d'espace
-	printf("A la fin tu peut voir ton temps en seconde,\n il est marqué juste après le 'process exited after : <est la ton temps est marqué>'\n");
+	printf("A la fin tu peut voir ton temps en seconde,\nil est marque juste après le ''process exited after'' : <est la ton temps est marque>\n");
 	
 	fclose(fichier); //fermeture des fichiers
 	
