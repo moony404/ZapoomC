@@ -1,16 +1,15 @@
 /*
 ----------------------------------------------------------------------------------
-Devloppé par Le Furious Killer
+DevloppÃ© par Le Furious Killer
 Le ?? Janvier 2021 a ??h??
 Sauvergarde de tout les fichiers sur github : https://github.com/lefurious/Zapoom/blob/Zapoom/ZapoomC/Code%20Source/ZapoomC/ZapoomC.c
 ----------------------------------------------------------------------------------
 */
 
-//Directives de préprossésseur
+//Directives de prÃ©prossÃ©sseur
 
 #include <stdio.h>
 #include <stdlib.h>
-#include <math.h>
 #include <time.h>
 
 //Compiler version TDM-GCC 4.9.2 64-bit Release
@@ -31,7 +30,7 @@ int main()
     signed char mob_touple_pv = 50;
     signed char mob_touple_drop;
     
-    //Générateur de nombre aléatoire copier coller du site du zéro (openclassrooms)
+    //GÃ©nÃ©rateur de nombre alÃ©atoire copier coller du site du zÃ©ro (openclassrooms)
     	//constant MAX et MIN
     	
     	const int MAX = 5, MIN = 1;
@@ -43,7 +42,6 @@ int main()
     //user
     
     int user_yon;
-    int user_tutoie = 1;
     int user_login = 1;
     signed char user_request_firstmob = 0;
     signed char user_request_regenpv = 1;
@@ -61,7 +59,7 @@ int main()
     int perso_inv_baton = 0;
     int perso_inv_carteunoreverse = 0;
     int perso_inv_laine = 0;
-    int perso_inv_toupli = 0; //le toupli est un objet (condiéré comme de la chair de touple), il y a 1 chance sur 5 qu'il en drop
+    int perso_inv_toupli = 0; //le toupli est un objet (condiÃ©rÃ© comme de la chair de touple), il y a 1 chance sur 5 qu'il en drop
     int perso_nourriture = 0;
     int perso_eau = 0;
     int perso_force = 0;
@@ -108,7 +106,7 @@ int main()
     	break;
     	default:
     	/*
-		Début du
+		DÃ©but du
 		mesage d'erreur !
 		*/
     	printf("/!\ERROR/!\\nCode error : 1\nYou did not enter a correct number, you must \n restart the program!\n");
@@ -159,55 +157,35 @@ int main()
     		//debut de la 2eme verif de fichier != NULL
     		if (fichier != NULL)
     		{
-    			if (user_tutoie == 1) //la variable tutoie sert une fois au moins ;=)
-    			{
-    				printf("Recuperation termine ! Tu as eu de la chance !\n");
-				}
-    			else
-    			{
-    				printf("Recuperation termine ! Vous avez eu de la chance !\n");
-				}
+    			
 			}
-		}
-		else
-		{
-			printf("Les fichiers ne peuvent pas etre fermer donc il faut que tu \nredemarre le programme mais ne t'inquite pas il va redemarrer tout seul !\n");
-		}
-    	printf("OK !");
-    	sleep(1);
-    	printf("The program will close automatically in 3 seconds ...\n");
-    	sleep(1);
-    	printf("2...\n");
-    	sleep(1);
-    	printf("1...\n");
-    	sleep(1);
-    	printf("0...\n");
-    	exit(1);
+			}
+			else
+			{
+				printf("Les fichiers ne peuvent pas etre fermer donc il faut que tu \nredemarre le programme mais ne t'inquite pas il va redemarrer tout seul !\n");
+			}
+    		printf("OK !");
+    		sleep(1);
+    		printf("The program will close automatically in 3 seconds ...\n");
+    		sleep(1);
+    		printf("2...\n");
+    		sleep(1);
+    		printf("1...\n");
+    		sleep(1);
+    		printf("0...\n");
+    		exit(1);
+    		
+    	break;
     	
     	/*
 		Fin du
 		message d'erreur !
 		*/
-    	break;
     }
 	
     printf("Hey !\n");
     sleep(1);
-    printf("Je peut te tutoier ? \n1 = oui, 2 = non.\n");
-    scanf("%d\n", &user_tutoie);
-    
-    //if and else
-    
-    if (user_tutoie == 1)
-    {
-    	printf("Ok\n");
-    	sleep(1);
-	}
-	else
-	{
-		printf("Je TE tutoie quand meme !\n\n\n");
-		sleep(1);
-	}
+    //retrait le 10 11 2021 du systeme de "tutoiement"
 	printf("\n\n\n\n\n\n\n\n\n\n\n\\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
     printf("       ---Login---\nVeut tu te creer un compte (1),\nou te connecter a un compte existants(2), ou quitter (3)? \nTape le chiffre qui te corresponds et appuies sur entree !\n");
     scanf("%d", &user_login);
@@ -293,13 +271,13 @@ int main()
 	
 	if (fichier != NULL)
     {
-    	//on peut écrire dans le fichier c'est bon
+    	//on peut Ã©crire dans le fichier c'est bon
     	fprintf(fichier, "Tu as maintenant :\n- %d de nourriture\n- %d d'eau\n- %d de force\n- %d de level\n- %d de vie\n", perso_nourriture, perso_eau, perso_force, perso_lvl, perso_pv);
 	}
 	else
 	{
 		/*
-		Début du
+		DÃ©but du
 		mesage d'erreur !
 		*/
     	printf("/!\ERROR/!\\nCode error : 1\nYou did not enter a correct number, you must \n restart the program!\n");
@@ -350,41 +328,28 @@ int main()
     		//debut de la 2eme verif de fichier != NULL
     		if (fichier != NULL)
     		{
-    			if (user_tutoie == 1) //la variable tutoie sert une fois au moins ;=)
-    			{
-    				printf("Recuperation termine ! Tu as eu de la chance !\n");
-    				sleep(3);
-    				printf("Le programme va quand meme se fermer pour des raisons de securite !\n");
-    				sleep(3);
-				}
-    			else
-    			{
-    				printf("Recuperation termine ! Vous avez eu de la chance !\n");
-    				sleep(3);
-    				printf("Le programme va quand meme se fermer pour des raisons de securite !\n");
-    				sleep(3);
-				}
+    			
 			}
-		}
-		else
-		{
-			printf("Les fichiers ne peuvent pas etre fermer donc il faut que tu \nredemarre le programme mais ne t'inquite pas il va redemarrer tout seul !\n");
-			sleep(3);
-		}
-    	printf("OK !\n");
-    	sleep(1);
-    	printf("The program will close automatically in 3 seconds ...\n");
-    	sleep(1);
-    	printf("2...\n");
-    	sleep(1);
-		printf("1...\n");
-		sleep(1);
-		printf("0...\n");
-		exit(1);
-    	/*
-		Fin du
-		message d'erreur !
-		*/
+			}
+			else
+			{
+				printf("Les fichiers ne peuvent pas etre fermer donc il faut que tu \nredemarre le programme mais ne t'inquite pas il va redemarrer tout seul !\n");
+				sleep(3);
+			}
+    		printf("OK !\n");
+    		sleep(1);
+    		printf("The program will close automatically in 3 seconds ...\n");
+    		sleep(1);
+    		printf("2...\n");
+   		 	sleep(1);
+			printf("1...\n");
+			sleep(1);
+			printf("0...\n");
+			exit(1);
+    		/*
+			Fin du
+			message d'erreur !
+			*/
 	}
 	
 	//sleep(1);
@@ -406,7 +371,7 @@ int main()
 	Choix de l'utilisateur
 	pour choisire ce qu'il
 	va faire donc la variable
-	créer est en haut du
+	crÃ©er est en haut du
 	programme (l.25, col.5)
 	*/
 	
@@ -425,7 +390,7 @@ int main()
 			sleep(3);
 			
 			/*
-			Début du système pour la regen qui a 137 ligne en comptant les comments...
+			DÃ©but du systÃ©me pour la regen qui a 137 ligne en comptant les comments...
 			
 			Check si perso_ a bien
 			tout ses pv dans perso_pv,
@@ -448,7 +413,7 @@ int main()
 					else
 					{
 						//tout match (nourriture + pv) alors sa fait le truc de switch (user_request_regenpv)
-						//le switch est déplacé ici !
+						//le switch est dÃ©placÃ© ici !
 						printf("Ok, combien de point de vie souhaites tu regenerer ?\n(Tu peux en regenerer que 10 a la fois), (Sachant que tu en a %d.)\n", perso_pv);
 						//Deamnde des pv, 
 						//donc creation 
@@ -514,7 +479,7 @@ int main()
 							break;
 							default:
 							/*
-							Début du
+							DÃ©but du
 							mesage d'erreur !
 							*/
     						printf("/!\ERROR/!\\nCode error : 1\nYou did not enter a correct number, you must \n restart the program!\n");
@@ -565,24 +530,11 @@ int main()
     								//debut de la 2eme verif de fichier != NULL
     							if (fichier != NULL)
     							{
-    								if (user_tutoie == 1) //la variable tutoie sert une fois au moins ;=)
-    								{
-    									printf("Recuperation termine ! Tu as eu de la chance !\n");
-    									sleep(3);
-    									printf("Le programme va quand meme se fermer pour des raisons de securite !\n");
-    									sleep(3);
-									}
-    								else
-    								{
-    									printf("Recuperation termine ! Vous avez eu de la chance !\n");
-    									sleep(3);
-    									printf("Le programme va quand meme se fermer pour des raisons de securite !\n");
-    									sleep(3);
-									}
+    								
 								}
 								else
 								{
-									printf("Les fichiers ne peuvent pas etre fermer donc il faut que tu \nredemarre le programme mais ne t'inquite pas il va redemarrer tout seul !\n");
+									
 								}
     							printf("OK !");
     							sleep(1);
@@ -626,15 +578,15 @@ int main()
 			Et voila, tout simplement 
 			comme ceci en testant la 
 			valeur de perso_pv, si 
-			elle est < (infétieur) 
-			à 1, si oui on stop le 
+			elle est < (infÃ©tieur) 
+			Ã© 1, si oui on stop le 
 			jeu en disans qu'on a 
-			perdu et on rééxplique 
+			perdu et on rÃ©Ã©xplique 
 			que pour relancer un 
 			partie il faut faire 
 			Alt + F4 ou la croix 
 			pour fermer un programme, 
-			puis le démarrer.
+			puis le dÃ©marrer.
 			Apres on demande si
 			l'utilisateur veut regen 
 			ses pv avec sa perso_nourriture
@@ -669,7 +621,7 @@ int main()
 		break;
 		default:
 			/*
-			Début du
+			DÃ©but du
 			mesage d'erreur !
 			*/
     		printf("/!\ERROR/!\\nCode error : 1\nYou did not enter a correct number, you must \n restart the program!\n");
@@ -720,48 +672,43 @@ int main()
     			//debut de la 2eme verif de fichier != NULL
     			if (fichier != NULL)
     			{
-    				if (user_tutoie == 1) //la variable tutoie sert une fois au moins ;=)
-    				{
-    					printf("Recuperation termine ! Tu as eu de la chance !\n");
-					}
-    				else
-    				{
-    					printf("Recuperation termine ! Vous avez eu de la chance !\n");
-					}
+    				
 				}
-			}
-			else
-			{
-				printf("Les fichiers ne peuvent pas etre fermer donc il faut que tu \nredemarre le programme mais ne t'inquite pas il va redemarrer tout seul !\n");
-			}
-    		printf("OK !\n");
-    		sleep(1);
-    		printf("The program will close automatically in 3 seconds ...\n");
-    		sleep(1);
-    		printf("2...\n");
-    		sleep(1);
-    		printf("1...\n");
-    		sleep(1);
-    		printf("0...\n");
-    		exit(1);
-    		
-    		/*
-			Fin du
-			message d'erreur !
-			*/
+				}
+				else
+				{
+					printf("Les fichiers ne peuvent pas etre fermer donc il faut que tu \nredemarre le programme mais ne t'inquite pas il va redemarrer tout seul !\n");
+				}
+    			printf("OK !\n");
+    			sleep(1);
+    			printf("The program will close automatically in 3 seconds ...\n");
+    			sleep(1);
+    			printf("2...\n");
+    			sleep(1);
+    			printf("1...\n");
+    			sleep(1);
+    			printf("0...\n");
+    			exit(1);
+    			
 		break;
+		
+		/*
+		Fin du
+		message d'erreur !
+		*/
 	}
+	
 	sleep(3); //la on sort avec un sleep	
 	
 	/*
 	Suite des choses,
-	donc là on passé
+	donc lÃ© on passÃ©
 	le cap des 750
 	lignes mais la
 	on va faire le
-	système de récolte
+	systÃ©me de rÃ©colte
 	de bois, pour
-	pouvoir récolter
+	pouvoir rÃ©colter
 	du bois pour
 	pouvoir crafter
 	des outils,
@@ -787,7 +734,7 @@ int main()
 	
 	//sleep de sortie des syst
 	sleep(2);
-	//suite du programme pour avprès le bois :
+	//suite du programme pour avprÃ©s le bois :
 	printf("Tu vient d'avoir ta premiere buche de bois !\ndonc tu peut dorenavant fabriquer des objets avec ce bois !");
 	printf("<><><><><>Menu De Fabriquation Simple<><><><><>\n\n");
 	printf("Que veux-tu fabriquer ?\n\n");
@@ -795,16 +742,7 @@ int main()
 	scanf("%d", &sw);
 	switch (sw)
 	{
-		case 1:
-			if (user_tutoie == 1)
-			{
-				printf("Ok, attends un peu !\n");
-			}
-			else
-			{
-				printf("Ok, attendez un peu je vous prie.\n");
-			}
-			
+		case 1:		
 			sleep(2);
     		printf("0  - [..........]\n");
     		sleep(1);
@@ -823,14 +761,6 @@ int main()
     		sleep(1);
 		break;
 		case 2:
-			if (user_tutoie == 1)
-			{
-				printf("Ok, attends un peu !\n");
-			}
-			else
-			{
-				printf("Ok, attendez un peu je vous prie.\n");
-			}
 			sleep(2);
     		printf("0  - [..........]\n");
     		sleep(1);
@@ -851,7 +781,7 @@ int main()
 		break;
 		default:
 			/*
-			Début du
+			DÃ©but du
 			mesage d'erreur !
 			*/
     		printf("/!\ERROR/!\\nCode error : 1\nYou did not enter a correct number, you must \n restart the program!\n");
@@ -902,44 +832,38 @@ int main()
     			//debut de la 2eme verif de fichier != NULL
     			if (fichier != NULL)
     			{
-    				if (user_tutoie == 1) //la variable tutoie sert une fois au moins ;=)
-    				{
-    					printf("Recuperation termine ! Tu as eu de la chance !\n");
-					}
-    				else
-    				{
-    					printf("Recuperation termine ! Vous avez eu de la chance !\n");
-					}
+    				
 				}
-			}
-			else
-			{
-				printf("Les fichiers ne peuvent pas etre fermer donc il faut que tu \nredemarre le programme mais ne t'inquite pas il va redemarrer tout seul !\n");
-			}
-    		printf("OK !\n");
-    		sleep(1);
-    		printf("The program will close automatically in 3 seconds ...\n");
-    		sleep(1);
-    		printf("2...\n");
-    		sleep(1);
-    		printf("1...\n");
-    		sleep(1);
-    		printf("0...\n");
-    		exit(1);
-    		
-    		/*
-			Fin du
-			message d'erreur !
-			*/
+				}
+				else
+				{
+					printf("Les fichiers ne peuvent pas etre fermer donc il faut que tu \nredemarre le programme mais ne t'inquite pas il va redemarrer tout seul !\n");
+				}
+    			printf("OK !\n");
+    			sleep(1);
+    			printf("The program will close automatically in 3 seconds ...\n");
+    			sleep(1);
+    			printf("2...\n");
+    			sleep(1);
+    			printf("1...\n");
+    			sleep(1);
+    			printf("0...\n");
+    			exit(1);
+    			
 		break;
+		
+		/*
+		Fin du
+		message d'erreur !
+		*/
 	}
 	
 	//switch (avec sw)
 		
-	//juste avoir de l'oxigene
+	//juste avoir de l'oxigene (2nd°)
 	printf("\n\n");
 	
-	//Premier succèes
+	//Premier succÃ©es
 	printf("Bravo : premier succes deverouille :\nCouper sa premiere buche.\n\n");
 	printf("C'est bon tu as casse ton premier arbre,\n tu as du remarquer que un succes est apparus !\n");
 	
@@ -948,13 +872,13 @@ int main()
 	fichier = fopen("backup_2.txt", "w");
 	if (fichier != NULL)
     {
-    	//on peut écrire dans le fichier c'est bon
+    	//on peut Ã©crire dans le fichier c'est bon
     	fprintf(fichier, "Tu as maintenant :\n- %d de nourriture\n- %d d'eau\n- %d de force\n- %d de level\n- %d de vie\n", perso_nourriture, perso_eau, perso_force, perso_lvl, perso_pv);
 	}
 	else
 	{
 		/*
-		Début du
+		DÃ©but du
 		mesage d'erreur !
 		*/
     	printf("/!\ERROR/!\\nCode error : 1\nYou did not enter a correct number, you must \n restart the program!\n");
@@ -1005,41 +929,29 @@ int main()
     		//debut de la 2eme verif de fichier != NULL
     		if (fichier != NULL)
     		{
-    			if (user_tutoie == 1) //la variable tutoie sert une fois au moins ;=)
-    			{
-    				printf("Recuperation termine ! Tu as eu de la chance !\n");
-    				sleep(3);
-    				printf("Le programme va quand meme se fermer pour des raisons de securite !\n");
-    				sleep(3);
-				}
-    			else
-    			{
-    				printf("Recuperation termine ! Vous avez eu de la chance !\n");
-    				sleep(3);
-    				printf("Le programme va quand meme se fermer pour des raisons de securite !\n");
-    				sleep(3);
-				}
+    		
 			}
-		}
-		else
-		{
-			printf("Les fichiers ne peuvent pas etre fermer donc il faut que tu \nredemarre le programme mais ne t'inquite pas il va redemarrer tout seul !\n");
-			sleep(3);
-		}
-    	printf("OK !\n");
-    	sleep(1);
-    	printf("The program will close automatically in 3 seconds ...\n");
-    	sleep(1);
-    	printf("2...\n");
-    	sleep(1);
-		printf("1...\n");
-		sleep(1);
-		printf("0...\n");
-		exit(1);
-    	/*
-		Fin du
-		message d'erreur !
-		*/
+			}
+			else
+			{
+				printf("Les fichiers ne peuvent pas etre fermer donc il faut que tu \nredemarre le programme mais ne t'inquite pas il va redemarrer tout seul !\n");
+				sleep(3);
+			}
+    		printf("OK !\n");
+    		sleep(1);
+    		printf("The program will close automatically in 3 seconds ...\n");
+    		sleep(1);
+    		printf("2...\n");
+    		sleep(1);
+			printf("1...\n");
+			sleep(1);
+			printf("0...\n");
+			exit(1);
+			
+	    	/*
+			Fin du
+			message d'erreur !
+			*/
 	}
 		
 	//fin du recalcule des objets de perso_dans "backup_1.txt"
@@ -1047,21 +959,14 @@ int main()
 	//fin du jeu snif, snif ;(
 	
 	printf("Sa, yeah ! %s vient de finir ZapoomC,\n_____________________________________________________________________\n", user_prenom);
-    //comptage des variable ensemble (dans la variable score qui a été créé a la ligne 54, et la collone 5)
+    //comptage des variable ensemble (dans la variable score qui a Ã©tÃ© crÃ©Ã© a la ligne 54, et la collone 5)
     //user_score = :
     user_score = perso_inv_caillou + perso_inv_bois + perso_inv_fil + perso_inv_baton + perso_inv_carteunoreverse + perso_inv_laine + perso_inv_toupli + perso_nourriture + perso_eau + perso_force + perso_lvl + perso_pv;
     //suite
 	//fin, snif...
-	if (user_tutoie == 1)
-	{
-		printf("Ton score : %d, tu peut etre fier de toi jeune aventurier !\n", user_score);
-	}
-	else
-	{
-	    printf("Ton score : %d, vous poyvez etre fier de vous jeune aventurier !\n", user_score);
-	}
+	printf("Ton score : %d, vous poyvez etre fier de vous jeune aventurier !\n", user_score);
 	printf("_____________________________________________________________________\n"); //ligne d'espace
-	printf("A la fin tu peut voir ton temps en seconde,\nil est marque juste après le ''process exited after'' : <est la ton temps est marque>\n");
+	printf("A la fin tu peut voir ton temps en seconde,\nil est marque juste aprÃ©s le ''process exited after'' : <est la ton temps est marque>\n");
 	
 	fclose(fichier); //fermeture des fichiers
 	
