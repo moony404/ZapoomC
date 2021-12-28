@@ -610,7 +610,7 @@ int main()
 			}
 			else
 			{
-				printf("Ok, dommage tu pourrais en apprendre plus !\n");
+				printf("Ok, dommage tu aurais pu en apprendre plus !\n");
 				sleep(1);
 			}
 		break;
@@ -857,7 +857,7 @@ int main()
 		*/
 	}
 	
-	printf("Bravo : succes deverouille :\nCFabriquer son premiere objet.\n\n");
+	printf("Bravo : premier succes deverouille :\nFabriquer son premiere objet !");
 		
 	//juste avoir de l'oxigene (2nd°)
 	printf("\n\n");
@@ -929,7 +929,7 @@ int main()
     		//debut de la 2eme verif de fichier != NULL
     		if (fichier != NULL)
     		{
-    		
+    			//RIEN NE SE PASSE
 			}
 			}
 			else
@@ -948,10 +948,10 @@ int main()
 			printf("0...\n");
 			exit(1);
 			
-	    	/*
-			Fin du
-			message d'erreur !
-			*/
+	   	/*
+		Fin du
+		message d'erreur !
+		*/
 	}
 		
 	//fin du recalcule des objets de perso_dans "backup_1.txt"
@@ -961,7 +961,7 @@ int main()
 	printf("Sa, yeah ! %s vient de finir ZapoomC,\n_____________________________________________________________________\n", user_prenom);
     //comptage des variable ensemble (dans la variable score qui a été crée a la ligne 50, et la collone 5)
     //user_score = :
-    user_score = perso_inv_caillou + perso_inv_bois + perso_inv_fil + perso_inv_baton + perso_inv_carteunoreverse + perso_inv_laine + perso_inv_toupli + perso_nourriture + perso_eau + perso_force + perso_lvl + perso_pv;
+    user_score = perso_inv_caillou + perso_inv_bois + perso_inv_fil + perso_inv_baton + perso_inv_planches + perso_inv_carteunoreverse + perso_inv_laine + perso_inv_toupli + perso_nourriture + perso_eau + perso_force + perso_lvl + perso_pv;
     //suite
 	//fin, snif...
 	printf("Ton score : %d, vous poyvez etre fier de vous jeune aventurier !\n", user_score);
