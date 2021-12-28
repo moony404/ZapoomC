@@ -1,6 +1,6 @@
 /*
 ----------------------------------------------------------------------------------
-Devloppé par Le Furious Killer
+Devloppé par Moony
 Le ?? Janvier 2021 a ??h??
 Sauvergarde de tout les fichiers sur github : https://github.com/lefurious/Zapoom/blob/Zapoom/ZapoomC/Code%20Source/ZapoomC/ZapoomC.c
 ----------------------------------------------------------------------------------
@@ -185,9 +185,9 @@ int main()
 	
     printf("Hey !\n");
     sleep(1);
-    //retrait le 10 11 2021 du systeme de "tutoiement"
+    //retrait le 10/11/2021 du systeme de "tutoiement"
 	printf("\n\n\n\n\n\n\n\n\n\n\n\\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
-    printf("       ---Login---\nVeut tu te creer un compte (1),\nou te connecter a un compte existants(2), ou quitter (3)? \nTape le chiffre qui te corresponds et appuies sur entree !\n");
+    printf("                  ---Login---\nVeut tu te creer un compte (1),\nou te connecter a un compte existants(2), ou quitter (3)? \nTape le chiffre qui te corresponds et appuies sur entree !\n");
     scanf("%d", &user_login);
     
     switch (user_login)
@@ -256,7 +256,7 @@ int main()
 		}
 		else
 		{
-			printf("Ok voici un court debrif sur ce que tu doit apprendre rapidement :\n- ZapoomC est un jeu de combat en console (pour l'intant).\n- Montes en niveau pour pouvoir debloquer de nouveau sort et te battre contre des monstres (appele mob).\n- Si tu as besoin d'aide rejoint notre serveur discord, lien : https://discord.gg/TsqfuZPrxa\n\n");
+			printf("Ok voici un court debrif sur ce que tu doit apprendre rapidement :\n- ZapoomC est un jeu de combat en console (pour l'intant).\n- Montes en niveau pour pouvoir debloquer de nouveau sort et te battre contre des monstres (appele mob).\n- Si tu as besoin d'aide rejoint notre serveur discord, lien : https://discord.gg/zMP9aBZJ5u\n\n");
 			sleep(1);
 		}
 	}
@@ -354,7 +354,7 @@ int main()
 	
 	//sleep(1);
 	sleep(1);
-	//end of //sleep(1);
+	//end of sleep(1);
 	
 	//Premmier mob
 			
@@ -372,7 +372,7 @@ int main()
 	pour choisire ce qu'il
 	va faire donc la variable
 	créer est en haut du
-	programme (l.25, col.5)
+	programme (l.46, col.5)
 	*/
 	
 	scanf("%d", &user_request_firstmob);
@@ -734,9 +734,9 @@ int main()
 	
 	//sleep de sortie des syst
 	sleep(2);
-	//suite du programme pour avprÃ©s le bois :
-	printf("Tu vient d'avoir ta premiere buche de bois !\ndonc tu peut dorenavant fabriquer des objets avec ce bois !");
-	printf("<><><><><>Menu De Fabriquation Simple<><><><><>\n\n");
+	//suite du programme pour avprés le bois :
+	printf("Tu vient d'avoir ta premiere buche de bois !\ndonc tu peut dorenavant fabriquer des objets avec ce bois !\n");
+	printf("<><><><><>Menu De Fabriquation Simple<><><><><>\n\n\n\n");
 	printf("Que veux-tu fabriquer ?\n\n");
 	printf("1.Planches (x8)\n2.Baton (x4)\n\n");
 	scanf("%d", &sw);
@@ -754,10 +754,10 @@ int main()
     		sleep(1);
     		printf("100 -[||||||||||]\n");
     		sleep(1);
-    		printf("Terminee !\n");
+    		printf("Termine !\n\n\n\n");
     		perso_inv_planches = perso_inv_planches + 8;
     		sleep(1);
-    		printf("Te voila avec des planches !");
+    		printf("Te voila avec des planches !\n");
     		sleep(1);
 		break;
 		case 2:
@@ -772,10 +772,10 @@ int main()
     		sleep(1);
     		printf("100 -[||||||||||]\n");
     		sleep(1);
-    		printf("Terminee !\n");
+    		printf("Termine !\n\n\n\n");
     		perso_inv_baton = perso_inv_baton + 4;
     		sleep(1);
-    		printf("Te voila avec des batons !");
+    		printf("Te voila avec des batons !\n");
     		sleep(3);
 		break;
 		default:
@@ -857,18 +857,44 @@ int main()
 		*/
 	}
 	
-	printf("Bravo : premier succes deverouille :\nFabriquer son premiere objet !");
+	printf("\n\nBravo : premier succes deverouille :\nFabriquer son premiere objet !");
 		
-	//juste avoir de l'oxigene (2nd°)
+	//juste avoir de l'oxigene (2nd degres)
 	printf("\n\n");
 	
 	//Premier succées
-	printf("Bravo : premier succes deverouille :\nCouper sa premiere buche.\n\n");
+	printf("Bravo : succes deverouille :\nCouper sa premiere buche.\n\n");
 	sleep(1);
-	printf("C'est bon tu as casse ton premier arbre,\n tu as du remarquer que un succes est apparus !\n");
+	printf("\nC'est bon tu as casse ton premier arbre,\ntu as du remarquer qu'un succes est apparus !\n\n");
+	sleep(4);
+	
+	printf("------------------------------------------------------------------------------------------------------------------------\n");
+	printf("------------------------------------------------------------------------------------------------------------------------\n");
+	printf("------------------------------------------------------------------------------------------------------------------------\n");
+	printf("------------------------------------------------------------------------------------------------------------------------\n");
+	printf("-----------------------------------<><><><><>Debut Du Chapitre 2<><><><><>----------------------------------------------\n");
+	printf("------------------------------------------------------------------------------------------------------------------------\n");
+	printf("------------------------------------------------------------------------------------------------------------------------\n");
+	printf("------------------------------------------------------------------------------------------------------------------------\n");
+	printf("------------------------------------------------------------------------------------------------------------------------\n\n\n\n");
+	sleep(5);
+	
+	printf("Voici le debut d'une 2eme grande aventure !\n\n\n\n");
+	printf("Tu te balade dans la foret pour recuperer de bois\n(d'ailleurs tu viens d'en prendre, + 11),\n et la tu vois une horde de touple !\n");
+	perso_inv_bois = perso_inv_bois + 11;
+	sleep(2);
+	printf("Tu les attaques (Ils sont 5)\n");
+	sleep(2);
+	printf("Victoireee !\n");
+	printf("Tu es vraiment d'une intelligence surpuicente et de force incroyable !\n");
+	printf("Tu reussi a les tues tous et tu recupere leurs drops (drops = leur objets), cela s'appelle le toupli !\nTu as 1 chance sur 5 d'en avoir en tuant 1 touple !\n\n");
+	perso_inv_toupli = perso_inv_toupli + mob_touple_drop;
+	printf("Tu en a eu : %d\n\n", perso_inv_toupli);
+	
+	//fin du chapitre 2
 	
 	//recalcule pour "backup_1.txt" :
-	//Fichier pour "backup_1.txt"
+	//Fichier pour "backup_1.txt", qui est donc la pour backup_2.txt.
 	fichier = fopen("backup_2.txt", "w");
 	if (fichier != NULL)
     {
@@ -878,7 +904,7 @@ int main()
 	else
 	{
 		/*
-		DÃébut du
+		Début du
 		mesage d'erreur !
 		*/
     	printf("/!\ERROR/!\\nCode error : 1\nYou did not enter a correct number, you must \n restart the program!\n");
@@ -958,7 +984,7 @@ int main()
 	
 	//fin du jeu snif, snif ;(
 	
-	printf("Sa, yeah ! %s vient de finir ZapoomC,\n_____________________________________________________________________\n", user_prenom);
+	printf("Sa, yeah ! %s vient de finir ZapoomC\n_____________________________________________________________________\n", user_prenom);
     //comptage des variable ensemble (dans la variable score qui a été crée a la ligne 50, et la collone 5)
     //user_score = :
     user_score = perso_inv_caillou + perso_inv_bois + perso_inv_fil + perso_inv_baton + perso_inv_planches + perso_inv_carteunoreverse + perso_inv_laine + perso_inv_toupli + perso_nourriture + perso_eau + perso_force + perso_lvl + perso_pv;
