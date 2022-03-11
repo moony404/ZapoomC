@@ -1,6 +1,6 @@
 /*
 ----------------------------------------------------------------------------------
-Devloppé par Moony
+Devloppé par $moony
 Le ?? Janvier 2021 a ??h??
 Sauvergarde de tout les fichiers sur github : https://github.com/lefurious/Zapoom/blob/Zapoom/ZapoomC/Code%20Source/ZapoomC/ZapoomC.c
 ----------------------------------------------------------------------------------
@@ -570,7 +570,7 @@ int main()
 				//On peut continuer,
 				//Sans aucune frayeurs.
 				//
-				//Moony,
+				//$moony,
 				//03/08/2021
 			}
 			
