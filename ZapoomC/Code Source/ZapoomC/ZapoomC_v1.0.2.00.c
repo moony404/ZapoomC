@@ -1,12 +1,12 @@
 /*
 ----------------------------------------------------------------------------------
-Devloppé par $moony
+Devlopp� par $moony
 Le ?? Janvier 2021 a ??h??
-Sauvergarde de tout les fichiers sur github : https://github.com/lefurious/Zapoom/blob/Zapoom/ZapoomC/Code%20Source/ZapoomC/ZapoomC.c
+Sauvergarde de tout les fichiers sur github : https://github.com/moony404/Zapoom/blob/Zapoom/ZapoomC/Code%20Source/ZapoomC/ZapoomC.c
 ----------------------------------------------------------------------------------
 */
 
-//Directives de préprosésseur
+//Directives de pr�pros�sseur
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -30,7 +30,7 @@ int main()
     signed char mob_touple_pv = 50;
     signed char mob_touple_drop;
     
-    //Générateur de nombre aléatoire copier coller du site du zéro (openclassrooms)
+    //G�n�rateur de nombre al�atoire copier coller du site du z�ro (openclassrooms)
     	//constant MAX et MIN
     	
     	const int MAX = 5, MIN = 1;
@@ -106,7 +106,7 @@ int main()
     	break;
     	default:
     	/*
-		Début du
+		D�but du
 		mesage d'erreur !
 		*/
     	printf("/!\ERROR/!\\nCode error : 1\nYou did not enter a correct number, you must \n restart the program!\n");
@@ -271,13 +271,13 @@ int main()
 	
 	if (fichier != NULL)
     {
-    	//on peut écrire dans le fichier c'est bon
+    	//on peut �crire dans le fichier c'est bon
     	fprintf(fichier, "Tu as maintenant :\n- %d de nourriture\n- %d d'eau\n- %d de force\n- %d de level\n- %d de vie\n", perso_nourriture, perso_eau, perso_force, perso_lvl, perso_pv);
 	}
 	else
 	{
 		/*
-		Début du
+		D�but du
 		mesage d'erreur !
 		*/
     	printf("/!\ERROR/!\\nCode error : 1\nYou did not enter a correct number, you must \n restart the program!\n");
@@ -371,7 +371,7 @@ int main()
 	Choix de l'utilisateur
 	pour choisire ce qu'il
 	va faire donc la variable
-	créer est en haut du
+	cr�er est en haut du
 	programme (l.46, col.5)
 	*/
 	
@@ -390,7 +390,7 @@ int main()
 			sleep(3);
 			
 			/*
-			Début du systéme pour la regen qui a 137 ligne en comptant les comments...
+			D�but du syst�me pour la regen qui a 137 ligne en comptant les comments...
 			
 			Check si perso_ a bien
 			tout ses pv dans perso_pv,
@@ -413,7 +413,7 @@ int main()
 					else
 					{
 						//tout match (nourriture + pv) alors sa fait le truc de switch (user_request_regenpv)
-						//le switch est déplacé ici !
+						//le switch est d�plac� ici !
 						printf("Ok, combien de point de vie souhaites tu regenerer ?\n(Tu peux en regenerer que 10 a la fois), (Sachant que tu en a %d.)\n", perso_pv);
 						//Deamnde des pv, 
 						//donc creation 
@@ -479,7 +479,7 @@ int main()
 							break;
 							default:
 							/*
-							Début du
+							D�but du
 							mesage d'erreur !
 							*/
     						printf("/!\ERROR/!\\nCode error : 1\nYou did not enter a correct number, you must \n restart the program!\n");
@@ -578,15 +578,15 @@ int main()
 			Et voila, tout simplement 
 			comme ceci en testant la 
 			valeur de perso_pv, si 
-			elle est < (infétieur) 
+			elle est < (inf�tieur) 
 			e 1, si oui on stop le 
 			jeu en disans qu'on a 
-			perdu et on rééxplique 
+			perdu et on r��xplique 
 			que pour relancer un 
 			partie il faut faire 
 			Alt + F4 ou la croix 
 			pour fermer un programme, 
-			puis le démarrer.
+			puis le d�marrer.
 			Apres on demande si
 			l'utilisateur veut regen 
 			ses pv avec sa perso_nourriture
@@ -621,7 +621,7 @@ int main()
 		break;
 		default:
 			/*
-			Début du
+			D�but du
 			mesage d'erreur !
 			*/
     		printf("/!\ERROR/!\\nCode error : 1\nYou did not enter a correct number, you must \n restart the program!\n");
@@ -702,13 +702,13 @@ int main()
 	
 	/*
 	Suite des choses,
-	donc lé on passé
+	donc l� on pass�
 	le cap des 750
 	lignes mais la
 	on va faire le
-	systéme de récolte
+	syst�me de r�colte
 	de bois, pour
-	pouvoir récolter
+	pouvoir r�colter
 	du bois pour
 	pouvoir crafter
 	des outils,
@@ -734,7 +734,7 @@ int main()
 	
 	//sleep de sortie des syst
 	sleep(2);
-	//suite du programme pour avprés le bois :
+	//suite du programme pour avpr�s le bois :
 	printf("Tu vient d'avoir ta premiere buche de bois !\ndonc tu peut dorenavant fabriquer des objets avec ce bois !\n");
 	printf("<><><><><>Menu De Fabriquation Simple<><><><><>\n\n\n\n");
 	printf("Que veux-tu fabriquer ?\n\n");
@@ -780,7 +780,7 @@ int main()
 		break;
 		default:
 			/*
-			Début du
+			D�but du
 			mesage d'erreur !
 			*/
     		printf("/!\ERROR/!\\nCode error : 1\nYou did not enter a correct number, you must \n restart the program!\n");
@@ -862,7 +862,7 @@ int main()
 	//juste avoir de l'oxigene (2nd degres)
 	printf("\n\n");
 	
-	//Premier succées
+	//Premier succ�es
 	printf("Bravo : succes deverouille :\nCouper sa premiere buche.\n\n");
 	sleep(1);
 	printf("\nC'est bon tu as casse ton premier arbre,\ntu as du remarquer qu'un succes est apparus !\n\n");
@@ -898,13 +898,13 @@ int main()
 	fichier = fopen("backup_2.txt", "w");
 	if (fichier != NULL)
     {
-    	//on peut écrire dans le fichier c'est bon
+    	//on peut �crire dans le fichier c'est bon
     	fprintf(fichier, "Tu as maintenant :\n- %d de nourriture\n- %d d'eau\n- %d de force\n- %d de level\n- %d de vie\n", perso_nourriture, perso_eau, perso_force, perso_lvl, perso_pv);
 	}
 	else
 	{
 		/*
-		Début du
+		D�but du
 		mesage d'erreur !
 		*/
     	printf("/!\ERROR/!\\nCode error : 1\nYou did not enter a correct number, you must \n restart the program!\n");
@@ -985,7 +985,7 @@ int main()
 	//fin du jeu snif, snif ;(
 	
 	printf("Sa, yeah ! %s vient de finir ZapoomC\n_____________________________________________________________________\n", user_prenom);
-    //comptage des variable ensemble (dans la variable score qui a été crée a la ligne 50, et la collone 5)
+    //comptage des variable ensemble (dans la variable score qui a �t� cr�e a la ligne 50, et la collone 5)
     //user_score = :
     user_score = perso_inv_caillou + perso_inv_bois + perso_inv_fil + perso_inv_baton + perso_inv_planches + perso_inv_carteunoreverse + perso_inv_laine + perso_inv_toupli + perso_nourriture + perso_eau + perso_force + perso_lvl + perso_pv;
     //suite
