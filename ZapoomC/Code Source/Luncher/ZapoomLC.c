@@ -101,5 +101,5 @@ int main()
     sleep(1);
     system("cls");
     exit(0);
-    return 0; //retirn 0
+    return 0; //return 0
 }
