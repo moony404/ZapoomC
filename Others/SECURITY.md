@@ -7,7 +7,7 @@ This is the supported version for window 10 :
 | Version | Supported          |
 |---------|--------------------|
 | 1.2 | released |
-| 1.0.1.81 Alpha | released |
+| 1.0.1.81 Alpha | not here |
 | 1.0.1.80 Alpha | not here |
 | 1.0.1.10 Alpha | not here |
 | 1.0.1.00 Alpha | not usable |
