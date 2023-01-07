@@ -2,7 +2,7 @@
 ----------------------------------------------------------------------------------
 Devloppe par $moony
 Le ?? Janvier 2021 a ??h??
-Sauvergarde de tout les fichiers sur github : https://github.com/moony404/Zapoom/blob/Zapoom/ZapoomC/Code%20Source/ZapoomC/ZapoomC.c
+Sauvergarde de tout les fichiers sur github : https://github.com/moony404/ZapoomC
 ----------------------------------------------------------------------------------
 */
 
