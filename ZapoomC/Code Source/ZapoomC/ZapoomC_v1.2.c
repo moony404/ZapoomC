@@ -2,7 +2,7 @@
 ----------------------------------------------------------------------------------
 Devloppe par $moony
 Le ?? Janvier 2021 a ??h??
-Sauvergarde de tout les fichiers sur github : https://github.com/moony404/ZapoomC
+Sauvergarde de tout les fichiers sur github : https://github.com/moony404/ZapoomC 
 ----------------------------------------------------------------------------------
 */
 
@@ -717,9 +717,9 @@ int main()
 	*/
 	
 	printf("Maintenant, on vas devoir aller cherchez du bois dans la foret !\n");
-	sleep(3);
+	sleep(2);
 	printf("Oh, regarde la bas un arbre !");
-	sleep(1);
+	sleep(3);
 	printf("\n");
 	printf("      ||\n");
 	printf("     |||| \n");
@@ -728,16 +728,18 @@ int main()
 	printf("      ||  \n");
 	printf("      ||  \n");
 	printf("_|_,__||____,__||___\n\n");
-	sleep(2);
+	sleep(4);
 	printf("Tu le coupes au bout de 30 secondes *c'est archi long*\n");
-	
+	sleep(3);
+
 	perso_inv_bois = perso_inv_bois + 4;
 	
 	//sleep de sortie des syst
 	sleep(2);
 	//suite du programme pour avpres le bois :
 	printf("Tu vient d'avoir ta premiere buche de bois !\ndonc tu peut dorenavant fabriquer des objets avec ce bois !\n");
-	printf("<><><><><>Menu De Fabriquation Simple<><><><><>\n\n\n\n");
+	sleep(5);
+	printf("<><><><><>Menu De Fabriquation Simple<><><><><>\n");
 	printf("Que veux-tu fabriquer ?\n\n");
 	printf("1.Planches (x8)\n2.Baton (x4)\n\n");
 	scanf("%d", &sw);
@@ -757,9 +759,8 @@ int main()
     		sleep(1);
     		printf("Termine !\n\n\n\n");
     		perso_inv_planches = perso_inv_planches + 8;
-    		sleep(1);
     		printf("Te voila avec des planches !\n");
-    		sleep(1);
+    		sleep(3);
 		break;
 		case 2:
 			sleep(2);
@@ -775,7 +776,6 @@ int main()
     		sleep(1);
     		printf("Termine !\n\n\n\n");
     		perso_inv_baton = perso_inv_baton + 4;
-    		sleep(1);
     		printf("Te voila avec des batons !\n");
     		sleep(3);
 		break;
@@ -859,13 +859,14 @@ int main()
 	}
 	
 	printf("\n\nBravo : premier succes deverouille :\nFabriquer son premiere objet !");
+	sleep(2);
 		
 	//juste avoir de l'oxigene (2nd degres)
 	printf("\n\n");
 	
 	//Premier succees
 	printf("Bravo : succes deverouille :\nCouper sa premiere buche.\n\n");
-	sleep(1);
+	sleep(4);
 	printf("\nC'est bon tu as casse ton premier arbre,\ntu as du remarquer qu'un succes est apparus !\n\n");
 	sleep(4);
 	
@@ -881,6 +882,7 @@ int main()
 	sleep(5);
 	
 	printf("Voici le debut d'une 2eme grande aventure !\n\n\n\n");
+	sleep(4);
 	printf("Tu te balade dans la foret pour recuperer de bois\n(d'ailleurs tu viens d'en prendre, + 11),\n et la tu vois une horde de touple !\n");
 	perso_inv_bois = perso_inv_bois + 11;
 	sleep(2);
@@ -888,10 +890,14 @@ int main()
 	sleep(2);
 	printf("Victoireee !\n");
 	printf("Tu es vraiment d'une intelligence surpuissante et de force incroyable !\n");
+	sleep(4);
 	printf("Tu reussi a les tues tous et tu recupere leurs drops (drops = leur objets), ce loot s'appelle le toupli !\nTu as 1 chance sur 5 d'en avoir en tuant 1 touple !\n\n");
 	perso_inv_toupli = perso_inv_toupli + mob_touple_drop;
 	printf("Tu en a eu : %d\n\n", perso_inv_toupli);
+	sleep(2);
 	
+	//Continuer le chapitre 2
+
 	//fin du chapitre 2
 	
 	//recalcule pour "backup_1.txt" :
