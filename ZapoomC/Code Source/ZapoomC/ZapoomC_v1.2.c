@@ -74,7 +74,7 @@ int main()
     
     //Programme
     
-    printf("Salut toi ! :)\nAvant toute chose suis un petit robot qui va\nt'aider dans ton aventure, si il y a des bugs dans ce jeu\nn'hesites surtout pas a les dire sur ce site : https://github.com/lefurious/Zapoom/issues/new\n\n");
+    printf("Salut toi ! :)\nAvant toute chose suis un petit robot qui va\nt'aider dans ton aventure, si il y a des bugs dans ce jeu\nn'hesites surtout pas a les dire sur ce site : https://github.com/moony404/ZapoomC/issues\n\n");
     sleep(8);
     printf("Desoler si les accents ne s'affiche pas,\nceci est lie a un bug, il faudra vous y faire, quelque fois il y a ER pour demarquer les accents sinon des fois\non peut comprendre d'autre mots. Merci de votre comphreensions.\n\n");
     sleep(10);
