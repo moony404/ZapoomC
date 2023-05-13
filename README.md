@@ -1,12 +1,3 @@
-# Historique des MAJ :
-
-Hey !
-Si t'es la c'est que tu est curieux xd, bon voici l'historique des mises a jour de ZapoomC à partir de la v.1.0.1.81 et du 28/12/2021 à 15h57 :
-
-28/12/2021 / Réparation des caractères cassés + correction de fautes de frappes + ajout du début du chapitre 2 + on a dépassé les 1 000 lignes de code + update de la version v1.0.1.81 vers la v1.0.2.00
-
-06/09/2022 / Changement des lettre cassé + update de la v1.0.2.00 à la v1.2
-
 # Zapoom
 Français : Téléchargez d'abord le luncher, ouvrez-le puis attander la fin de l'installation,
 ensuite télécharger ZapoomC (le jeu) et ouvrer ZapoomC, et voila vous pouvez commencer a jouer.
