@@ -8,8 +8,8 @@ then download ZapoomC (the game) and open ZapoomC, you can start playing.
 Tips for pros: 1 = yes and 0 = no.
 
 
-Deutsche : Laden Sie zuerst den Luncher herunter, öffnen Sie ihn, warten Sie, bis die Installation
- abgeschlossen ist, laden Sie dann ZapoomC (das Spiel) herunter und öffnen Sie ZapoomC und voila. 
+Deutsch : Laden Sie zuerst den Luncher herunter, öffnen Sie ihn, warten Sie, bis die Installation
+abgeschlossen ist, laden Sie dann ZapoomC (das Spiel) herunter und öffnen Sie ZapoomC und voila. 
 Tipps für Profis: 1 = ja und 0 = nein.
 
 
@@ -17,7 +17,7 @@ Tipps für Profis: 1 = ja und 0 = nein.
 ，就可以開始玩了。給專業人士的提示：1 = 是，0 = 否。
 
 
-Russe : Сначала загрузите ланчер, откройте его, затем дождитесь окончания установки, затем загрузите 
+Russian : Сначала загрузите ланчер, откройте его, затем дождитесь окончания установки, затем загрузите 
 ZapoomC (игру) и откройте ZapoomC, и вуаля, вы можете начать играть. 
 Советы для профессионалов: 1 = да и 0 = нет.
 
