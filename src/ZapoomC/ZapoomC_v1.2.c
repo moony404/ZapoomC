@@ -15,78 +15,7 @@ Sauvergarde de tout les fichiers sur github : https://github.com/moony404/Zapoom
 
 //Compiler version TDM-GCC 4.9.2 64-bit Release
 
-int error() {
-	printf("/!\ERROR/!\\nCode error : 1\nYou did not enter a correct number, you must \n restart the program!\n");
-	sleep(3);
-	printf("Fermeture des fichiers ouvert ?\n");
-	sleep(1);
-	if (fichier != NULL) {
-		printf("Tentative de redemarrage des fichiers...\n");
-		sleep(2);
-		printf("0  - [..........]\n");
-		sleep(1);
-		printf("12 - [|.........]\n");
-		sleep(1);
-		printf("24 - [||........]\n");
-		sleep(1);
-		printf("30 - [|||.......]\n");
-		sleep(1);
-		printf("46 - [||||......]\n");
-		sleep(1);
-		printf("51 - [|||||.....]\n");
-		sleep(1);
-		printf("68 - [||||||....]\n");
-		sleep(1);
-		printf("68 - [||||||....]\n");
-		sleep(1);
-		printf("70 - [|||||||...]\n");
-		sleep(1);
-		printf("82 - [||||||||..]\n");
-		sleep(1);
-		printf("89 - [||||||||..]\n");
-		sleep(1);
-		printf("90 - [|||||||||.]\n");
-		sleep(1);
-		printf("95 - [|||||||||.]\n");
-		sleep(1);
-		printf("96 - [|||||||||.]\n");
-		sleep(1);
-		printf("98 - [|||||||||.]\n");
-		sleep(1);
-		printf("99 - [|||||||||.]\n");
-		sleep(1);
-		printf("99 - [|||||||||.]\n");
-		sleep(1);
-		printf("100 -[||||||||||]\n");
-		sleep(1);
-		printf("Terminee !\n");
-		//debut de la 2eme verif de fichier != NULL
-		if (fichier != NULL)
-		{
-			//RIEN NE SE PASSE
-		}
-		}
-		else
-		{
-			printf("Les fichiers ne peuvent pas etre fermer donc il faut que tu \nredemarre le programme mais ne t'inquite pas il va redemarrer tout seul !\n");
-			sleep(3);
-		}
-		printf("OK !\n");
-		sleep(1);
-		printf("The program will close automatically in 3 seconds ...\n");
-		sleep(1);
-		printf("2...\n");
-		sleep(1);
-		printf("1...\n");
-		sleep(1);
-		printf("0...\n");
-		exit(1);
-		
-	/*
-	Fin du
-	message d'erreur !
-	*/
-}
+
 
 int main()
 {
@@ -1062,4 +991,74 @@ int main()
 	sleep(60); //attente de 60 secondes soit 1 minutes
 
     return 0;
+}
+
+int error() {
+	printf("/!\ERROR/!\\nCode error : 1\nYou did not enter a correct number, you must \n restart the program!\n");
+	sleep(3);
+	printf("Fermeture des fichiers ouvert ?\n");
+	sleep(1);
+	if (fichier != NULL) {
+		printf("Tentative de redemarrage des fichiers...\n");
+		sleep(2);
+		printf("0  - [..........]\n");
+		sleep(1);
+		printf("12 - [|.........]\n");
+		sleep(1);
+		printf("24 - [||........]\n");
+		sleep(1);
+		printf("30 - [|||.......]\n");
+		sleep(1);
+		printf("46 - [||||......]\n");
+		sleep(1);
+		printf("51 - [|||||.....]\n");
+		sleep(1);
+		printf("68 - [||||||....]\n");
+		sleep(1);
+		printf("68 - [||||||....]\n");
+		sleep(1);
+		printf("70 - [|||||||...]\n");
+		sleep(1);
+		printf("82 - [||||||||..]\n");
+		sleep(1);
+		printf("89 - [||||||||..]\n");
+		sleep(1);
+		printf("90 - [|||||||||.]\n");
+		sleep(1);
+		printf("95 - [|||||||||.]\n");
+		sleep(1);
+		printf("96 - [|||||||||.]\n");
+		sleep(1);
+		printf("98 - [|||||||||.]\n");
+		sleep(1);
+		printf("99 - [|||||||||.]\n");
+		sleep(1);
+		printf("99 - [|||||||||.]\n");
+		sleep(1);
+		printf("100 -[||||||||||]\n");
+		sleep(1);
+		printf("Terminee !\n");
+		//debut de la 2eme verif de fichier != NULL
+		if (fichier != NULL) {
+			//RIEN NE SE PASSE
+		}
+		}
+		else {
+			printf("Les fichiers ne peuvent pas etre fermer donc il faut que tu \nredemarre le programme mais ne t'inquite pas il va redemarrer tout seul !\n");
+			sleep(3);
+		}
+		printf("OK !\n");
+		sleep(1);
+		printf("The program will close automatically in 3 seconds ...\n");
+		sleep(1);
+		printf("2...\n");
+		sleep(1);
+		printf("1...\n");
+		sleep(1);
+		printf("0...\n");
+		exit(1);
+	/*
+	Fin du
+	message d'erreur !
+	*/
 }
