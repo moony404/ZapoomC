@@ -78,11 +78,8 @@ int main()
     printf("1.Jouer\n");
     printf("2.Credits\n");
     printf("3.Quitter\n");
-    
     scanf("%d", &sw);
-    
-    switch (sw)
-    {
+    switch (sw) {
     	case 1:
           	printf("Bon Jeu !\n");
       		sleep(2);
@@ -96,93 +93,15 @@ int main()
     		exit(1);
     	break;
     	default:
-    	/*
-		Debut du
-		mesage d'erreur !
-		*/
-    	printf("/!\ERROR/!\\nCode error : 1\nYou did not enter a correct number, you must \n restart the program!\n");
-    	sleep(3);
-    	printf("Fermeture des fichiers ouvert ?\n");
-    	sleep(1);
-    	if (fichier != NULL)
-    	{
-    		printf("Tentative de redemarrage des fichiers...\n");
-    		sleep(2);
-    		printf("0  - [..........]\n");
-    		sleep(1);
-    		printf("12 - [|.........]\n");
-    		sleep(1);
-    		printf("24 - [||........]\n");
-    		sleep(1);
-    		printf("30 - [|||.......]\n");
-    		sleep(1);
-    		printf("46 - [||||......]\n");
-    		sleep(1);
-    		printf("51 - [|||||.....]\n");
-    		sleep(1);
-    		printf("68 - [||||||....]\n");
-    		sleep(1);
-    		printf("68 - [||||||....]\n");
-    		sleep(1);
-    		printf("70 - [|||||||...]\n");
-    		sleep(1);
-    		printf("82 - [||||||||..]\n");
-    		sleep(1);
-    		printf("89 - [||||||||..]\n");
-    		sleep(1);
-    		printf("90 - [|||||||||.]\n");
-    		sleep(1);
-    		printf("95 - [|||||||||.]\n");
-    		sleep(1);
-    		printf("96 - [|||||||||.]\n");
-    		sleep(1);
-    		printf("98 - [|||||||||.]\n");
-    		sleep(1);
-    		printf("99 - [|||||||||.]\n");
-    		sleep(1);
-    		printf("99 - [|||||||||.]\n");
-    		sleep(1);
-    		printf("100 -[||||||||||]\n");
-    		sleep(1);
-    		printf("Terminez !\n");
-    		//debut de la 2eme verif de fichier != NULL
-    		if (fichier != NULL)
-    		{
-    			
-			}
-		}
-			else
-			{
-				printf("Les fichiers ne peuvent pas etre fermer donc il faut que tu \nredemarre le programme mais ne t'inquite pas il va redemarrer tout seul !\n");
-			}
-    		printf("OK !");
-    		sleep(1);
-    		printf("The program will close automatically in 3 seconds ...\n");
-    		sleep(1);
-    		printf("2...\n");
-    		sleep(1);
-    		printf("1...\n");
-    		sleep(1);
-    		printf("0...\n");
-    		exit(1);
-    		
-    	break;
-    	
-    	/*
-		Fin du
-		message d'erreur !
-		*/
+			error();
     }
-	
     printf("Hey !\n");
     sleep(1);
     //retrait le 10/11/2021 du systeme de "tutoiement"
 	printf("\n\n\n\n\n\n\n\n\n\n\n\\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
     printf("                  ---Login---\nVeut tu te creer un compte (1),\nou te connecter a un compte existants(2), ou quitter (3)? \nTape le chiffre qui te corresponds et appuies sur entree !\n");
     scanf("%d", &user_login);
-    
-    switch (user_login)
-    {
+    switch (user_login) {
     	case 1:
     		printf("Ok, mets ton pseudo et ton mot de passe coller (sans espaces entre les deux) !\n");
     		scanf("%s", &user_pseudoAndPassword);
@@ -214,139 +133,46 @@ int main()
     		exit(1);
     	break;
 	}
-    
     printf("Tu as faim ?\n \n1 = oui, 0 = non.\n");
     int faim = 0;
     scanf("%d", &faim);
     sleep(1);
-    
-    if (faim == 1)
-    {
+    if (faim == 1) {
     	perso_nourriture = perso_nourriture + 1;
     	perso_lvl = perso_lvl + 1;
     	printf("Tien :\n- +1 de nourriture\n- +0 d'eau\n- +0 de force\n- +1 Lvl\n- +0 de vie\nTu as maintenant :\n- %d de nourriture\n- %d d'eau\n- %d de force\n- %d de level\n- %d de vie\n", perso_nourriture, perso_eau, perso_force, perso_lvl, perso_pv);
     	sleep(1);
 	}
-	else
-	{
+	else {
 		printf("Ok tu n'aura pas de nourriture en plus.\n");
 		sleep(1);
 	}
-	
 	printf("Tu savais que tu 1 = oui et 0 = non (dans ce jeu) ?\n");
 	sleep(2);
 	printf("As tu deja jouer a ce jeu ?\n");
 	scanf("%d", &user_yon);
-	if (user_yon == 1)
-	{	
+	if (user_yon == 1) {	
 		printf("T'es sur ?\n");
 		scanf("%d", &user_yon);
-		if (user_yon == 1)
-		{
+		if (user_yon == 1) {
 			printf("Ok ok..\n");
 			sleep(1);
-		}
-		else
-		{
+		} else {
 			printf("Ok voici un court debrif sur ce que tu doit apprendre rapidement :\n- ZapoomC est un jeu de combat en console (pour l'intant).\n- Montes en niveau pour pouvoir debloquer de nouveau sort et te battre contre des monstres (appele mob).\n- Si tu as besoin d'aide rejoint notre serveur discord, lien : https://discord.gg/zMP9aBZJ5u\n\n");
 			sleep(1);
 		}
-	}
-	else
-	{
+	} else {
 		printf("Ok voici un court debrif sur ce que tu doit apprendre rapidement :\n- ZapoomC est un jeu de combat en console (pour l'intant).\n- Montes en niveau pour pouvoir debloquer de nouveau sort et te battre contre des monstres (appele mob).\n- Si tu as besoin d'aide rejoint notre serveur discord, lien : https://discord.gg/TsqfuZPrxa\n\n");
 		sleep(1);
 	}
 	
-	
 	//Fichier pour "backup_1.txt"
-	
-	if (fichier != NULL)
-    {
-    	//on peut ecrire dans le fichier c'est bon
+	if (fichier != NULL) {
     	fprintf(fichier, "Tu as maintenant :\n- %d de nourriture\n- %d d'eau\n- %d de force\n- %d de level\n- %d de vie\n", perso_nourriture, perso_eau, perso_force, perso_lvl, perso_pv);
+	} else {
+		error();
 	}
-	else
-	{
-		/*
-		Debut du
-		mesage d'erreur !
-		*/
-    	printf("/!\ERROR/!\\nCode error : 1\nYou did not enter a correct number, you must \n restart the program!\n");
-    	sleep(3);
-    	printf("Fermeture des fichiers ouvert ?\n");
-    	sleep(1);
-    	if (fichier != NULL)
-    	{
-    		printf("Tentative de redemarrage des fichiers...\n");
-    		sleep(2);
-    		printf("0  - [..........]\n");
-    		sleep(1);
-    		printf("12 - [|.........]\n");
-    		sleep(1);
-    		printf("24 - [||........]\n");
-    		sleep(1);
-    		printf("30 - [|||.......]\n");
-    		sleep(1);
-    		printf("46 - [||||......]\n");
-    		sleep(1);
-    		printf("51 - [|||||.....]\n");
-    		sleep(1);
-    		printf("68 - [||||||....]\n");
-    		sleep(1);
-    		printf("68 - [||||||....]\n");
-    		sleep(1);
-    		printf("70 - [|||||||...]\n");
-    		sleep(1);
-    		printf("82 - [||||||||..]\n");
-    		sleep(1);
-    		printf("89 - [||||||||..]\n");
-    		sleep(1);
-    		printf("90 - [|||||||||.]\n");
-    		sleep(1);
-    		printf("95 - [|||||||||.]\n");
-    		sleep(1);
-    		printf("96 - [|||||||||.]\n");
-    		sleep(1);
-    		printf("98 - [|||||||||.]\n");
-    		sleep(1);
-    		printf("99 - [|||||||||.]\n");
-    		sleep(1);
-    		printf("99 - [|||||||||.]\n");
-    		sleep(1);
-    		printf("100 -[||||||||||]\n");
-    		sleep(1);
-    		printf("Terminee !\n");
-    		//debut de la 2eme verif de fichier != NULL
-    		if (fichier != NULL)
-    		{
-    			
-			}
-		}
-			else
-			{
-				printf("Les fichiers ne peuvent pas etre fermer donc il faut que tu \nredemarre le programme mais ne t'inquite pas il va redemarrer tout seul !\n");
-				sleep(3);
-			}
-    		printf("OK !\n");
-    		sleep(1);
-    		printf("The program will close automatically in 3 seconds ...\n");
-    		sleep(1);
-    		printf("2...\n");
-   		 	sleep(1);
-			printf("1...\n");
-			sleep(1);
-			printf("0...\n");
-			exit(1);
-    		/*
-			Fin du
-			message d'erreur !
-			*/
-	}
-	
-	//sleep(1);
 	sleep(1);
-	//end of sleep(1);
 	
 	//Premmier mob
 			
@@ -994,71 +820,25 @@ int main()
 int error() {
 	printf("/!\ERROR/!\\nCode error : 1\nYou did not enter a correct number, you must \n restart the program!\n");
 	sleep(3);
-	printf("Fermeture des fichiers ouvert ?\n");
+	printf("Fermeture des fichiers ouvert\n");
 	sleep(1);
     FILE* fichier = NULL;
     fichier = fopen("backup_1.txt", "w");
 	if (fichier != NULL) {
 		printf("Tentative de redemarrage des fichiers...\n");
 		sleep(2);
-		printf("0  - [..........]\n");
-		sleep(1);
-		printf("12 - [|.........]\n");
-		sleep(1);
-		printf("24 - [||........]\n");
-		sleep(1);
-		printf("30 - [|||.......]\n");
-		sleep(1);
-		printf("46 - [||||......]\n");
-		sleep(1);
-		printf("51 - [|||||.....]\n");
-		sleep(1);
-		printf("68 - [||||||....]\n");
-		sleep(1);
-		printf("68 - [||||||....]\n");
-		sleep(1);
-		printf("70 - [|||||||...]\n");
-		sleep(1);
-		printf("82 - [||||||||..]\n");
-		sleep(1);
-		printf("89 - [||||||||..]\n");
-		sleep(1);
-		printf("90 - [|||||||||.]\n");
-		sleep(1);
-		printf("95 - [|||||||||.]\n");
-		sleep(1);
-		printf("96 - [|||||||||.]\n");
-		sleep(1);
-		printf("98 - [|||||||||.]\n");
-		sleep(1);
-		printf("99 - [|||||||||.]\n");
-		sleep(1);
-		printf("99 - [|||||||||.]\n");
-		sleep(1);
-		printf("100 -[||||||||||]\n");
-		sleep(1);
-		printf("Terminee !\n");
+		printf("Termine !\n");
 		//debut de la 2eme verif de fichier != NULL
 		if (fichier != NULL) {
 			//RIEN NE SE PASSE
 		}
-		}
-		else {
-			printf("Les fichiers ne peuvent pas etre fermer donc il faut que tu \nredemarre le programme mais ne t'inquite pas il va redemarrer tout seul !\n");
-			sleep(3);
+	} else {
+		printf("Les fichiers ne peuvent pas etre fermer donc il faut que tu \nredemarre le programme mais ne t'inquite pas il va redemarrer tout seul !\n");
+		sleep(3);
 		}
 		printf("OK !\n");
 		sleep(1);
 		printf("The program will close automatically in 3 seconds ...\n");
-		sleep(1);
-		printf("2...\n");
-		sleep(1);
-		printf("1...\n");
-		sleep(1);
-		printf("0...\n");
+		sleep(3);
 		exit(1);
-	/*
-	Fin du
-	message d'erreur !
-	*/
 }
