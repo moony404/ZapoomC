@@ -14,6 +14,31 @@ Sauvergarde de tout les fichiers sur github : https://github.com/moony404/Zapoom
 #include <unistd.h>
 
 //Compiler version TDM-GCC 4.9.2 64-bit Release
+int error() {
+	printf("/!\ERROR/!\\nCode error : 1\nYou did not enter a correct number, you must \n restart the program!\n");
+	sleep(3);
+	printf("Fermeture des fichiers ouvert\n");
+	sleep(1);
+    FILE* fichier = NULL;
+    fichier = fopen("backup_1.txt", "w");
+	if (fichier != NULL) {
+		printf("Tentative de redemarrage des fichiers...\n");
+		sleep(2);
+		printf("Termine !\n");
+		//debut de la 2eme verif de fichier != NULL
+		if (fichier != NULL) {
+			//RIEN NE SE PASSE
+		}
+	} else {
+		printf("Les fichiers ne peuvent pas etre fermer donc il faut que tu \nredemarre le programme mais ne t'inquite pas il va redemarrer tout seul !\n");
+		sleep(3);
+		printf("OK !\n");
+		sleep(1);
+		printf("The program will close automatically in 3 seconds ...\n");
+		sleep(3);
+		exit(1);
+	}
+}
 
 int main()
 {
@@ -422,6 +447,7 @@ int main()
     return 0;
 }
 
+/*
 int error() {
 	printf("/!\ERROR/!\\nCode error : 1\nYou did not enter a correct number, you must \n restart the program!\n");
 	sleep(3);
@@ -447,3 +473,4 @@ int error() {
 		exit(1);
 	}
 }
+*/
