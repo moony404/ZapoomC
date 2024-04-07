@@ -996,7 +996,7 @@ int error() {
 	sleep(3);
 	printf("Fermeture des fichiers ouvert ?\n");
 	sleep(1);
-
+2
     FILE* fichier = NULL;
     fichier = fopen("backup_1.txt", "w");
 	if (fichier != NULL) {
