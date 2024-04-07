@@ -15,8 +15,6 @@ Sauvergarde de tout les fichiers sur github : https://github.com/moony404/Zapoom
 
 //Compiler version TDM-GCC 4.9.2 64-bit Release
 
-
-
 int main()
 {
     //variable
@@ -998,6 +996,8 @@ int error() {
 	sleep(3);
 	printf("Fermeture des fichiers ouvert ?\n");
 	sleep(1);
+    FILE* fichier = NULL;
+    fichier = fopen("backup_1.txt", "w");
 	if (fichier != NULL) {
 		printf("Tentative de redemarrage des fichiers...\n");
 		sleep(2);
