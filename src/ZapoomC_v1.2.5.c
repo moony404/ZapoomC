@@ -145,7 +145,6 @@ int main()
     		exit(0);
     	break;
     	default:
-    		//Message d'erreur
     		printf("/!\ERROR/!\\nCode error : 1\nYou did not enter a correct number, you must \n restart the program!\n");
     		sleep(3);
     		printf("The program will close automatically in 3 seconds ...\n");
@@ -198,9 +197,7 @@ int main()
 		error();
 	}
 	sleep(1);
-	
 	//Premmier mob
-			
 	printf("AAAA (O.O)\n");
 	sleep(1);
 	printf("Un touple vient d'apparaitre !\n");
@@ -209,18 +206,8 @@ int main()
 	printf("<><><><><>Menu De Combat<><><><><>\n\n");
 	printf("1.L'attaquer\n2.Rebrousser chemin\n");
 	sleep(1);
-	
-	/*
-	Choix de l'utilisateur
-	pour choisire ce qu'il
-	va faire donc la variable
-	creer est en haut du
-	programme (l.46, col.5)
-	*/
-	
 	scanf("%d", &user_request_firstmob);
-	switch (user_request_firstmob)
-	{
+	switch (user_request_firstmob) {
 		case 1:
 			//Attaque & demande d'attaques avec un switch
 			sleep(1);
@@ -439,7 +426,7 @@ int main()
 	//fin du recalcule des objets de perso_dans "backup_1.txt"
 	printf("Ca y est ! %s vient de finir ZapoomC\n_____________________________________________________________________\n", user_prenom);
     user_score = perso_inv_caillou + perso_inv_bois + perso_inv_fil + perso_inv_baton + perso_inv_planches + perso_inv_carteunoreverse + perso_inv_laine + perso_inv_toupli + perso_nourriture + perso_eau + perso_force + perso_lvl + perso_pv;
-	printf("Ton score : %d, vous poyvez etre fier de vous jeune aventurier !\n", user_score);
+	printf("Ton score : %d, vous pouvez etre fier de vous jeune aventurier !\n", user_score);
 	printf("_____________________________________________________________________\n"); //ligne d'espace
 	printf("A la fin tu peut voir ton temps en seconde,\nil est marque juste apres le ''process exited after'' : <est la ton temps est marque>\n");
 	fclose(fichier); //fermeture des fichiers
